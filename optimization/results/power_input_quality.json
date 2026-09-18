@@ -1,0 +1,12 @@
+{
+  "baseline": {
+    "unique_input_data_bit_names": 576,
+    "hierarchical_observations": 1152,
+    "observations_with_unknown_time": 0
+  },
+  "optimized": {
+    "unique_input_data_bit_names": 576,
+    "hierarchical_observations": 576,
+    "observations_with_unknown_time": 0
+  }
+}

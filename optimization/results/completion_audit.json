@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "rtl_cycles": 64815,
+    "hls_max_cycles": 474826,
+    "power_estimate_w": 0.177,
+    "saif_sha256": "a0cf38ec37be1ea747bbe8d090c0cd05abdcc8e290393376031429ace8456f5a"
+  },
+  "optimized": {
+    "rtl_cycles": 18428,
+    "hls_max_cycles": 18428,
+    "power_estimate_w": 0.164,
+    "saif_sha256": "f289d33fbbf90b14e79dd3bee236230c318109712ab260789c6a454db7966730"
+  },
+  "accuracy": {
+    "samples": 10000,
+    "correct": 9894,
+    "raw_outputs_identical": 100000
+  },
+  "aggressive5b": {
+    "rtl_cycles": 11025,
+    "hls_max_cycles": 11025,
+    "accuracy_samples": 10000,
+    "accuracy_correct": 9655,
+    "conv1_keep": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "conv2_keep": [
+      10,
+      0,
+      3,
+      2,
+      12,
+      8,
+      13,
+      6,
+      14,
+      1,
+      9,
+      5
+    ]
+  },
+  "flatten": {
+    "removed_buffer_in_synthesized_top": true,
+    "isolated_saving_cycles": 258
+  }
+}

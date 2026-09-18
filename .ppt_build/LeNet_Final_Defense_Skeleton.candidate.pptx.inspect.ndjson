@@ -1,0 +1,166 @@
+{"kind":"deck","id":"pr/n7etve","name":"Deck"}
+{"kind":"layout","layoutId":"575f95b5-66d9-4454-a8a8-9ae2386067a6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"8b64731b-3433-4ec4-a109-18f2d4906606","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/yf69lm","slide":1,"title":"LeNet 推理加速器","textShapes":5}
+{"kind":"shape","id":"sh/1kj2pwbm","slide":1,"bbox":[72,115,10,338]}
+{"kind":"textbox","id":"sh/exsju1sv","slide":1,"text":"LeNet 推理加速器","textPreview":"LeNet 推理加速器","textChars":11,"textLines":1,"bbox":[116,132,920,74]}
+{"kind":"textbox","id":"sh/zy1kn6tg","slide":1,"text":"Level 1 优化验证与 Level 2 自采数据验证","textPreview":"Level 1 优化验证与 Level 2 自采数据验证","textChars":28,"textLines":1,"bbox":[120,221,860,40]}
+{"kind":"shape","id":"sh/cvq1sra5","slide":1,"bbox":[120,294,460,2]}
+{"kind":"textbox","id":"sh/dwzilwbq","slide":1,"text":"智能芯片与系统设计综合实践","textPreview":"智能芯片与系统设计综合实践","textChars":13,"textLines":1,"bbox":[120,323,760,28]}
+{"kind":"textbox","id":"sh/qt8jqhsz","slide":1,"text":"最终答辩合并骨架\n成员 1 负责统一与合并","textPreview":"最终答辩合并骨架 | 成员 1 负责统一与合并","textChars":21,"textLines":2,"bbox":[120,404,610,62]}
+{"kind":"textbox","id":"sh/ruh0jmtk","slide":1,"text":"2026 年 9 月","textPreview":"2026 年 9 月","textChars":10,"textLines":1,"bbox":[120,590,300,22]}
+{"kind":"notes","id":"nt/yf69lm","slide":1,"text":"骨架页。最终由成员 1 合并成员 3 至成员 8 的已完成页面。"}
+{"kind":"slide","id":"sl/6vvhor","slide":2,"title":"LeNet 推理加速器","textShapes":17}
+{"kind":"shape","id":"sh/b21ofu1o","slide":2,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/c3a5ofi9","slide":2,"text":"LeNet 推理加速器","textPreview":"LeNet 推理加速器","textChars":11,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/x4j6hkju","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/y5cnqp0f","slide":2,"text":"项目范围与交付结构","textPreview":"项目范围与交付结构","textChars":9,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/z6loju10","slide":2,"text":"主线使用 optimized，高速版本 aggressive5b 仅作精度与延迟权衡对照","textPreview":"主线使用 optimized，高速版本 aggressive5b 仅作精度与延迟权衡对照","textChars":44,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"shape","id":"sh/k7u5szil","slide":2,"bbox":[72,180,1136,2]}
+{"kind":"textbox","id":"sh/l836l4jq","slide":2,"text":"网络","textPreview":"网络","textChars":2,"textLines":1,"bbox":[72,220,260,22]}
+{"kind":"textbox","id":"sh/m9c7u90b","slide":2,"text":"LeNet，1×28×28 输入","textPreview":"LeNet，1×28×28 输入","textChars":16,"textLines":1,"bbox":[72,247,290,42]}
+{"kind":"textbox","id":"sh/7alonehw","slide":2,"text":"无 Bias；CHW、OIHW 与 FC [OUT][IN] 已冻结","textPreview":"无 Bias；CHW、OIHW 与 FC [OUT][IN] 已冻结","textChars":34,"textLines":1,"bbox":[72,296,300,35]}
+{"kind":"textbox","id":"sh/z2dojuh8","slide":2,"text":"目标器件","textPreview":"目标器件","textChars":4,"textLines":1,"bbox":[425,220,260,22]}
+{"kind":"textbox","id":"sh/y14nap0n","slide":2,"text":"xc7z020clg400-1","textPreview":"xc7z020clg400-1","textChars":15,"textLines":1,"bbox":[425,247,290,42]}
+{"kind":"textbox","id":"sh/l4f6lkze","slide":2,"text":"10 ns 约束；Vivado HLS 2018.3","textPreview":"10 ns 约束；Vivado HLS 2018.3","textChars":26,"textLines":1,"bbox":[425,296,300,35]}
+{"kind":"textbox","id":"sh/03m5czit","slide":2,"text":"定点格式","textPreview":"定点格式","textChars":4,"textLines":1,"bbox":[778,220,260,22]}
+{"kind":"textbox","id":"sh/rydofahc","slide":2,"text":"W12/A12","textPreview":"W12/A12","textChars":7,"textLines":1,"bbox":[778,247,290,42]}
+{"kind":"textbox","id":"sh/qd4n650r","slide":2,"text":"A12：signed I7/F5，scale 为 1/32","textPreview":"A12：signed I7/F5，scale 为 1/32","textChars":29,"textLines":1,"bbox":[778,296,300,35]}
+{"kind":"textbox","id":"sh/d0v6hkz2","slide":2,"text":"Level 1","textPreview":"Level 1","textChars":7,"textLines":1,"bbox":[72,405,210,28]}
+{"kind":"textbox","id":"sh/czm58fih","slide":2,"text":"MNIST 功能、定点一致性、HLS 优化与 RTL Co-sim","textPreview":"MNIST 功能、定点一致性、HLS 优化与 RTL Co-sim","textChars":33,"textLines":1,"bbox":[72,445,470,55]}
+{"kind":"textbox","id":"sh/vuxorehg","slide":2,"text":"Level 2","textPreview":"Level 2","textChars":7,"textLines":1,"bbox":[650,405,210,28]}
+{"kind":"textbox","id":"sh/atoni9gv","slide":2,"text":"真实手写样本、HLS C/C++ 预处理、Fixed/HLS 批量推理与误差分析","textPreview":"真实手写样本、HLS C/C++ 预处理、Fixed/HLS 批量推理与误差分析","textChars":40,"textLines":1,"bbox":[650,445,500,55]}
+{"kind":"notes","id":"nt/6vvhor","slide":2,"text":"来源：README.md、config/quant_config.json 与 Level 2 分工计划。"}
+{"kind":"slide","id":"sl/3nzbud","slide":3,"title":"Level 1 基础结果","textShapes":16}
+{"kind":"shape","id":"sh/atc72lo3","slide":3,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/xw3qx0nu","slide":3,"text":"Level 1 基础结果","textPreview":"Level 1 基础结果","textChars":12,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/wvup4vm9","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/nql8r65s","slide":3,"text":"Level 1 冻结基线","textPreview":"Level 1 冻结基线","textChars":12,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/mps7y1o7","slide":3,"text":"真实单图 latency 采用 RTL Co-sim，不采用 HLS 状态机保守上界","textPreview":"真实单图 latency 采用 RTL Co-sim，不采用 HLS 状态机保守上界","textChars":42,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/9s3qtgny","slide":3,"text":"Float MNIST Accuracy","textPreview":"Float MNIST Accuracy","textChars":20,"textLines":1,"bbox":[72,210,260,22]}
+{"kind":"textbox","id":"sh/8rup0b6d","slide":3,"text":"98.97%","textPreview":"98.97%","textChars":6,"textLines":1,"bbox":[72,237,290,42]}
+{"kind":"textbox","id":"sh/z218n65g","slide":3,"text":"Python Float Baseline","textPreview":"Python Float Baseline","textChars":21,"textLines":1,"bbox":[72,286,300,35]}
+{"kind":"textbox","id":"sh/y1s7u1ob","slide":3,"text":"Fixed / optimized Accuracy","textPreview":"Fixed / optimized Accuracy","textChars":26,"textLines":1,"bbox":[420,210,260,22]}
+{"kind":"textbox","id":"sh/g7i5orqd","slide":3,"text":"98.94%","textPreview":"98.94%","textChars":6,"textLines":1,"bbox":[420,237,290,42]}
+{"kind":"textbox","id":"sh/h8rmhw7y","slide":3,"text":"10,000 张 HLS CSim","textPreview":"10,000 张 HLS CSim","textChars":17,"textLines":1,"bbox":[420,286,300,35]}
+{"kind":"textbox","id":"sh/u50nmh8n","slide":3,"text":"baseline RTL latency","textPreview":"baseline RTL latency","textChars":20,"textLines":1,"bbox":[768,210,260,22]}
+{"kind":"textbox","id":"sh/v694fmps","slide":3,"text":"64,815 cycles","textPreview":"64,815 cycles","textChars":13,"textLines":1,"bbox":[768,237,290,42]}
+{"kind":"textbox","id":"sh/8jy5krqh","slide":3,"text":"单图真实 RTL Co-sim","textPreview":"单图真实 RTL Co-sim","textChars":15,"textLines":1,"bbox":[768,286,300,35]}
+{"kind":"shape","id":"sh/tkrmdw72","slide":3,"bbox":[72,375,1136,2]}
+{"kind":"textbox","id":"sh/6hgnih8b","slide":3,"text":"验证口径","textPreview":"验证口径","textChars":4,"textLines":1,"bbox":[72,420,230,30]}
+{"kind":"textbox","id":"sh/7ip4bmpw","slide":3,"text":"Float、Fixed 与 HLS 输入输出布局对齐；optimized 的 100,000 个最终 raw logits 与 Python Fixed 一致。","textPreview":"Float、Fixed 与 HLS 输入输出布局对齐；optimized 的 100,000 个最终 raw logits 与 Python Fixed 一致。","textChars":80,"textLines":1,"bbox":[72,468,1040,54]}
+{"kind":"textbox","id":"sh/sf25wbql","slide":3,"text":"成员 6 页面需要解释：474,826 cycles 是原 Controller 的保守上界，不能写成单图真实 latency。","textPreview":"成员 6 页面需要解释：474,826 cycles 是原 Controller 的保守上界，不能写成单图真实 latency。","textChars":64,"textLines":1,"bbox":[72,555,1040,32]}
+{"kind":"notes","id":"nt/3nzbud","slide":3,"text":"来源：optimization/REPORT_CN.md、Level 2 分工计划。数值不应由其他成员修改。"}
+{"kind":"slide","id":"sl/chcatl","slide":4,"title":"高精度优化","textShapes":15}
+{"kind":"shape","id":"sh/ralkz6lg","slide":4,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/sbulsbm1","slide":4,"text":"高精度优化","textPreview":"高精度优化","textChars":5,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/tcn21g3m","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/i5cjm14z","slide":4,"text":"optimized 高精度工作点","textPreview":"optimized 高精度工作点","textChars":16,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/j6lkvmlk","slide":4,"text":"Memory banking、融合 ReLU/Pool、消除 Flatten 复制与 FC 并行共同降低延迟","textPreview":"Memory banking、融合 ReLU/Pool、消除 Flatten 复制与 FC 并行共同降低延迟","textChars":54,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/47u1orm5","slide":4,"text":"RTL latency","textPreview":"RTL latency","textChars":11,"textLines":1,"bbox":[72,210,260,22]}
+{"kind":"textbox","id":"sh/5832xw3q","slide":4,"text":"64,815 → 18,428 cycles","textPreview":"64,815 → 18,428 cycles","textChars":22,"textLines":1,"bbox":[72,237,290,42]}
+{"kind":"textbox","id":"sh/21w3ylk3","slide":4,"text":"3.52×；Accuracy 保持 98.94%","textPreview":"3.52×；Accuracy 保持 98.94%","textChars":24,"textLines":1,"bbox":[72,286,300,35]}
+{"kind":"textbox","id":"sh/n25k7qlo","slide":4,"text":"Conv1","textPreview":"Conv1","textChars":5,"textLines":1,"bbox":[470,210,260,22]}
+{"kind":"textbox","id":"sh/fa54reh0","slide":4,"text":"33,913 → 7,849 cycles","textPreview":"33,913 → 7,849 cycles","textChars":21,"textLines":1,"bbox":[470,237,290,42]}
+{"kind":"textbox","id":"sh/e9w3i90f","slide":4,"text":"成员 4：访存银行与 II 解释","textPreview":"成员 4：访存银行与 II 解释","textChars":16,"textLines":1,"bbox":[470,286,300,35]}
+{"kind":"textbox","id":"sh/1c7mtozq","slide":4,"text":"Conv2","textPreview":"Conv2","textChars":5,"textLines":1,"bbox":[850,210,260,22]}
+{"kind":"textbox","id":"sh/gbylkjy5","slide":4,"text":"14,777 → 2,553 cycles","textPreview":"14,777 → 2,553 cycles","textChars":21,"textLines":1,"bbox":[850,237,290,42]}
+{"kind":"textbox","id":"sh/3ep4vehw","slide":4,"text":"成员 4：访存银行与 II 解释","textPreview":"成员 4：访存银行与 II 解释","textChars":16,"textLines":1,"bbox":[850,286,300,35]}
+{"kind":"shape","id":"sh/2dgnm9gb","slide":4,"bbox":[72,382,1136,2]}
+{"kind":"textbox","id":"sh/pg7mxoz2","slide":4,"text":"待插入成员 4、5、6 的成品页：问题、修改、前后实测数据与工程结论。","textPreview":"待插入成员 4、5、6 的成品页：问题、修改、前后实测数据与工程结论。","textChars":35,"textLines":1,"bbox":[72,438,1030,32]}
+{"kind":"textbox","id":"sh/ofy5ojyh","slide":4,"text":"合并时保留各模块的“原来 / 问题 / 修改 / 结果 / 结论”证据链，并统一术语为 baseline、optimized、aggressive5b。","textPreview":"合并时保留各模块的“原来 / 问题 / 修改 / 结果 / 结论”证据链，并统一术语为 baseline、optimized、aggressive5b。","textChars":76,"textLines":1,"bbox":[72,493,1045,62]}
+{"kind":"notes","id":"nt/chcatl","slide":4,"text":"来源：Level 2 分工计划。此页为成员 1 的合并引导页，不替代成员 4 至成员 6 的内容页。"}
+{"kind":"slide","id":"sl/mr3xyx","slide":5,"title":"设计权衡","textShapes":14}
+{"kind":"shape","id":"sh/1sfytkb2","slide":5,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/e5ofy5sr","slide":5,"text":"设计权衡","textPreview":"设计权衡","textChars":4,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/f6xwratc","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/ovqxozat","slide":5,"text":"精度与延迟工作点","textPreview":"精度与延迟工作点","textChars":8,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/pwzyx4be","slide":5,"text":"aggressive5b 改变了通道数，因此是独立工作点，不能与 optimized 混用 logits 或网络定义","textPreview":"aggressive5b 改变了通道数，因此是独立工作点，不能与 optimized 混用 logits 或网络定义","textChars":58,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/2tof2psn","slide":5,"text":"optimized","textPreview":"optimized","textChars":9,"textLines":1,"bbox":[72,225,260,22]}
+{"kind":"textbox","id":"sh/nuxgvut8","slide":5,"text":"18,428 cycles","textPreview":"18,428 cycles","textChars":13,"textLines":1,"bbox":[72,252,290,42]}
+{"kind":"textbox","id":"sh/czqxszap","slide":5,"text":"98.94%，主验证版本","textPreview":"98.94%，主验证版本","textChars":12,"textLines":1,"bbox":[72,301,300,35]}
+{"kind":"textbox","id":"sh/x0zy14ba","slide":5,"text":"aggressive5b","textPreview":"aggressive5b","textChars":12,"textLines":1,"bbox":[455,225,260,22]}
+{"kind":"textbox","id":"sh/dcfulojm","slide":5,"text":"11,025 cycles","textPreview":"11,025 cycles","textChars":13,"textLines":1,"bbox":[455,252,290,42]}
+{"kind":"textbox","id":"sh/cb6dsj21","slide":5,"text":"96.55%，低延迟补充版本","textPreview":"96.55%，低延迟补充版本","textChars":14,"textLines":1,"bbox":[455,301,300,35]}
+{"kind":"textbox","id":"sh/radcje1g","slide":5,"text":"aggressive5b 网络变化","textPreview":"aggressive5b 网络变化","textChars":17,"textLines":1,"bbox":[838,225,260,22]}
+{"kind":"textbox","id":"sh/q94vq9kv","slide":5,"text":"Conv1 6→5；Conv2 16→12","textPreview":"Conv1 6→5；Conv2 16→12","textChars":21,"textLines":1,"bbox":[838,252,290,42]}
+{"kind":"textbox","id":"sh/10fepoji","slide":5,"text":"FC1 使用 24 路并行","textPreview":"FC1 使用 24 路并行","textChars":13,"textLines":1,"bbox":[838,301,300,35]}
+{"kind":"shape","id":"sh/0z6dgj2x","slide":5,"bbox":[72,402,1136,2]}
+{"kind":"textbox","id":"sh/zyxwny1c","slide":5,"text":"成员 3 的位宽与资源证据页在此处合并。结论必须由 Accuracy、LUT、FF、DSP、BRAM、Latency 和 Clock 的实测数据支撑。","textPreview":"成员 3 的位宽与资源证据页在此处合并。结论必须由 Accuracy、LUT、FF、DSP、BRAM、Latency 和 Clock 的实测数据支撑。","textChars":75,"textLines":1,"bbox":[72,456,1050,62]}
+{"kind":"notes","id":"nt/mr3xyx","slide":5,"text":"来源：optimization/README.md 与 Level 2 分工计划。"}
+{"kind":"slide","id":"sl/ne3okp","slide":6,"title":"Level 2 数据通路","textShapes":17}
+{"kind":"shape","id":"sh/edgzulgn","slide":6,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/1g7ipgfe","slide":6,"text":"Level 2 数据通路","textPreview":"Level 2 数据通路","textChars":12,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/gfyhwbyt","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/ra50j6xc","slide":6,"text":"Level 2 HLS C/C++ 预处理","textPreview":"Level 2 HLS C/C++ 预处理","textChars":21,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/69wzq1gr","slide":6,"text":"成员 1 交付。JPEG/PNG 解码仅作输入适配，灰度、ROI、缩放、居中与 A12 导出均由 HLS C++ 核执行","textPreview":"成员 1 交付。JPEG/PNG 解码仅作输入适配，灰度、ROI、缩放、居中与 A12 导出均由 HLS C++ 核执行","textChars":60,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/tcnilgf2","slide":6,"text":"Simple","textPreview":"Simple","textChars":6,"textLines":1,"bbox":[72,205,220,30]}
+{"kind":"textbox","id":"sh/sbehsbyx","slide":6,"text":"RGB → 1:2:1 整数灰度 → 28×28","textPreview":"RGB → 1:2:1 整数灰度 → 28×28","textChars":24,"textLines":1,"bbox":[72,252,455,42]}
+{"kind":"textbox","id":"sh/j650f6x0","slide":6,"text":"Full","textPreview":"Full","textChars":4,"textLines":1,"bbox":[650,205,220,30]}
+{"kind":"textbox","id":"sh/ilczm1gf","slide":6,"text":"RGB → 灰度 → 阈值与极性 → ROI → 等比缩放 → 居中 28×28","textPreview":"RGB → 灰度 → 阈值与极性 → ROI → 等比缩放 → 居中 28×28","textChars":40,"textLines":1,"bbox":[650,252,490,58]}
+{"kind":"shape","id":"sh/0f65wjqh","slide":6,"bbox":[72,365,1136,2]}
+{"kind":"textbox","id":"sh/1gfmpor2","slide":6,"text":"当前样本","textPreview":"当前样本","textChars":4,"textLines":1,"bbox":[72,410,260,22]}
+{"kind":"textbox","id":"sh/edonu98r","slide":6,"text":"55 张","textPreview":"55 张","textChars":4,"textLines":1,"bbox":[72,437,290,42]}
+{"kind":"textbox","id":"sh/zex4ne9w","slide":6,"text":"50 张数字样本，5 张 background 抗干扰样本","textPreview":"50 张数字样本，5 张 background 抗干扰样本","textChars":29,"textLines":1,"bbox":[72,486,300,35]}
+{"kind":"textbox","id":"sh/sr65szql","slide":6,"text":"图像输出","textPreview":"图像输出","textChars":4,"textLines":1,"bbox":[435,410,260,22]}
+{"kind":"textbox","id":"sh/dcfml4r6","slide":6,"text":"110 张 PGM","textPreview":"110 张 PGM","textChars":9,"textLines":1,"bbox":[435,437,290,42]}
+{"kind":"textbox","id":"sh/qponqp8f","slide":6,"text":"Simple / Full 各 55 张，28×28 单通道","textPreview":"Simple / Full 各 55 张，28×28 单通道","textChars":30,"textLines":1,"bbox":[435,486,300,35]}
+{"kind":"textbox","id":"sh/rqx4ju90","slide":6,"text":"Fixed 输入","textPreview":"Fixed 输入","textChars":8,"textLines":1,"bbox":[800,410,260,22]}
+{"kind":"textbox","id":"sh/wnq5o3qp","slide":6,"text":"110 份 raw 文件","textPreview":"110 份 raw 文件","textChars":12,"textLines":1,"bbox":[800,437,290,42]}
+{"kind":"textbox","id":"sh/x8j6x8ra","slide":6,"text":"每份 784 行，A12 值范围 0 至 32","textPreview":"每份 784 行，A12 值范围 0 至 32","textChars":23,"textLines":1,"bbox":[800,486,300,35]}
+{"kind":"notes","id":"nt/ne3okp","slide":6,"text":"来源：hls/preprocess/level2_preprocess.cpp、data/self_collected/level2_manifest.csv、results/level2_preprocess/README.md。"}
+{"kind":"slide","id":"sl/dd5lht","slide":7,"title":"Level 2 验证准备","textShapes":14}
+{"kind":"shape","id":"sh/dwnuls76","slide":7,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/qtwvqdof","slide":7,"text":"Level 2 验证准备","textPreview":"Level 2 验证准备","textChars":12,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/bu5cjip0","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/0zydwn6h","slide":7,"text":"预处理核验证与成员 7 交接","textPreview":"预处理核验证与成员 7 交接","textChars":14,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/l07ups72","slide":7,"text":"HLS CSim 已通过，Full 核已完成 C synthesis 并生成 RTL","textPreview":"HLS CSim 已通过，Full 核已完成 C synthesis 并生成 RTL","textChars":42,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/yxgvudor","slide":7,"text":"HLS CSim","textPreview":"HLS CSim","textChars":8,"textLines":1,"bbox":[72,215,260,22]}
+{"kind":"textbox","id":"sh/zypcnipw","slide":7,"text":"0 errors","textPreview":"0 errors","textChars":8,"textLines":1,"bbox":[72,242,290,42]}
+{"kind":"textbox","id":"sh/8nyd076t","slide":7,"text":"synthetic digit、反色 digit、纯背景与 A12 规则测试","textPreview":"synthetic digit、反色 digit、纯背景与 A12 规则测试","textChars":38,"textLines":1,"bbox":[72,291,300,35]}
+{"kind":"textbox","id":"sh/9oretcne","slide":7,"text":"C synthesis","textPreview":"C synthesis","textChars":11,"textLines":1,"bbox":[445,215,260,22]}
+{"kind":"textbox","id":"sh/pwrmx476","slide":7,"text":"RTL 已生成","textPreview":"RTL 已生成","textChars":7,"textLines":1,"bbox":[445,242,290,42]}
+{"kind":"textbox","id":"sh/4vy5oz6l","slide":7,"text":"Full 核，xc7z020clg400-1","textPreview":"Full 核，xc7z020clg400-1","textChars":22,"textLines":1,"bbox":[445,291,300,35]}
+{"kind":"textbox","id":"sh/3up4vup0","slide":7,"text":"成员 7 输入","textPreview":"成员 7 输入","textChars":7,"textLines":1,"bbox":[815,215,260,22]}
+{"kind":"textbox","id":"sh/2tgnmpov","slide":7,"text":"manifest 驱动","textPreview":"manifest 驱动","textChars":11,"textLines":1,"bbox":[815,242,290,42]}
+{"kind":"textbox","id":"sh/d0r6147i","slide":7,"text":"路径、标签、ROI 审计字段均已交接","textPreview":"路径、标签、ROI 审计字段均已交接","textChars":18,"textLines":1,"bbox":[815,291,300,35]}
+{"kind":"shape","id":"sh/czi5sz6x","slide":7,"bbox":[72,400,1136,2]}
+{"kind":"textbox","id":"sh/ry94zupc","slide":7,"text":"0–9 标签进入十分类 Accuracy、每类 Accuracy 与混淆矩阵。background 只报告 prediction、logits、最大 logit 与 Full ROI 状态。","textPreview":"0–9 标签进入十分类 Accuracy、每类 Accuracy 与混淆矩阵。background 只报告 prediction、logits、最大 logit 与 Full ROI 状态。","textChars":95,"textLines":1,"bbox":[72,455,1040,62]}
+{"kind":"notes","id":"nt/dd5lht","slide":7,"text":"来源：results/level2_preprocess、data/self_collected/HANDOFF_TO_MEMBER7.md。"}
+{"kind":"slide","id":"sl/xljwqc","slide":8,"title":"Level 2 结果","textShapes":7}
+{"kind":"shape","id":"sh/3mp8vmx8","slide":8,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/4ny94red","slide":8,"text":"Level 2 结果","textPreview":"Level 2 结果","textChars":10,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/5o7qxwfy","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/uhwryhwb","slide":8,"text":"Level 2 批量推理结果","textPreview":"Level 2 批量推理结果","textChars":14,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/vi58rmxw","slide":8,"text":"等待成员 7 交付 Simple / Full 的 Python、Fixed 和 optimized HLS 测试结果","textPreview":"等待成员 7 交付 Simple / Full 的 Python、Fixed 和 optimized HLS 测试结果","textChars":59,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/gje907eh","slide":8,"text":"成员 7 需提供：总体 Accuracy、每类 Accuracy、Prediction CSV、Mismatch 数量与 logits。","textPreview":"成员 7 需提供：总体 Accuracy、每类 Accuracy、Prediction CSV、Mismatch 数量与 logits。","textChars":68,"textLines":1,"bbox":[72,210,1030,34]}
+{"kind":"textbox","id":"sh/hk7qtcf2","slide":8,"text":"成员 8 需提供：数据集构成、原始样本与预处理示例、混淆矩阵、典型误判和原因分析。","textPreview":"成员 8 需提供：数据集构成、原始样本与预处理示例、混淆矩阵、典型误判和原因分析。","textChars":41,"textLines":1,"bbox":[72,285,1030,34]}
+{"kind":"shape","id":"sh/ed0ra1wv","slide":8,"bbox":[72,375,1136,2]}
+{"kind":"textbox","id":"sh/fe9836x0","slide":8,"text":"合并规则：MNIST Accuracy 与自采数字 Accuracy 分开呈现；background 结果单列为抗干扰观察，不能计入 0–9 Accuracy。","textPreview":"合并规则：MNIST Accuracy 与自采数字 Accuracy 分开呈现；background 结果单列为抗干扰观察，不能计入 0–9 Accuracy。","textChars":80,"textLines":1,"bbox":[72,430,1040,56]}
+{"kind":"notes","id":"nt/xljwqc","slide":8,"text":"此页保留给成员 7 与成员 8 的成品结果页。禁止在结果到达前填入推测数值。"}
+{"kind":"slide","id":"sl/fogi3z","slide":9,"title":"最终答辩整合","textShapes":10}
+{"kind":"shape","id":"sh/ovah8vml","slide":9,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/3u10zql0","slide":9,"text":"最终答辩整合","textPreview":"最终答辩整合","textChars":6,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/2tsz654f","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/xk3i5k32","slide":9,"text":"合并检查点","textPreview":"合并检查点","textChars":5,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/cju1cfmh","slide":9,"text":"成员 1 统一版式和口径；各成员保留自己负责证据的可追溯来源","textPreview":"成员 1 统一版式和口径；各成员保留自己负责证据的可追溯来源","textChars":30,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/byl03alw","slide":9,"text":"待收件","textPreview":"待收件","textChars":3,"textLines":1,"bbox":[72,205,180,28]}
+{"kind":"textbox","id":"sh/qxcja54b","slide":9,"text":"成员 3、4、5、6、7 的模块 PPT，以及成员 8 的完整 Level 2 PPT。","textPreview":"成员 3、4、5、6、7 的模块 PPT，以及成员 8 的完整 Level 2 PPT。","textChars":44,"textLines":1,"bbox":[72,250,1030,34]}
+{"kind":"textbox","id":"sh/loni9k3e","slide":9,"text":"统一口径","textPreview":"统一口径","textChars":4,"textLines":1,"bbox":[72,345,180,28]}
+{"kind":"textbox","id":"sh/knu1gfmt","slide":9,"text":"baseline / optimized / aggressive5b 名称，Accuracy、Latency、资源数字和真实 RTL latency 解释。","textPreview":"baseline / optimized / aggressive5b 名称，Accuracy、Latency、资源数字和真实 RTL latency 解释。","textChars":79,"textLines":1,"bbox":[72,390,1030,34]}
+{"kind":"textbox","id":"sh/mpwvqtgn","slide":9,"text":"冻结条件","textPreview":"冻结条件","textChars":4,"textLines":1,"bbox":[72,485,180,28]}
+{"kind":"textbox","id":"sh/nq5cjyx8","slide":9,"text":"Level 2 数据、预处理代码、批测结果、成员页和总 PPT 使用同一份最终清单。","textPreview":"Level 2 数据、预处理代码、批测结果、成员页和总 PPT 使用同一份最终清单。","textChars":42,"textLines":1,"bbox":[72,530,1030,34]}
+{"kind":"notes","id":"nt/fogi3z","slide":9,"text":"来源：final_ppt/PPT_INTAKE.md 与 Level 2 分工计划。"}
+{"kind":"slide","id":"sl/id631y","slide":10,"title":"最终结论","textShapes":9}
+{"kind":"shape","id":"sh/q50vud4f","slide":10,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/dsre5sn6","slide":10,"text":"最终结论","textPreview":"最终结论","textChars":4,"textLines":1,"bbox":[72,665,900,22]}
+{"kind":"textbox","id":"sh/cridwnml","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1142,665,64,22]}
+{"kind":"textbox","id":"sh/32pczi54","slide":10,"text":"当前结论与待完成事项","textPreview":"当前结论与待完成事项","textChars":10,"textLines":1,"bbox":[72,55,1136,58]}
+{"kind":"textbox","id":"sh/21gvqd4j","slide":10,"text":"此页在收齐成员结果后再压缩为最终结论页","textPreview":"此页在收齐成员结果后再压缩为最终结论页","textChars":19,"textLines":1,"bbox":[72,121,1100,30]}
+{"kind":"textbox","id":"sh/p4ru18nu","slide":10,"text":"高准确率推荐","textPreview":"高准确率推荐","textChars":6,"textLines":1,"bbox":[72,208,280,28]}
+{"kind":"textbox","id":"sh/o3yds3m9","slide":10,"text":"optimized：98.94%，18,428 cycles","textPreview":"optimized：98.94%，18,428 cycles","textChars":30,"textLines":1,"bbox":[72,251,440,40]}
+{"kind":"textbox","id":"sh/7ytwb258","slide":10,"text":"低延迟补充工作点","textPreview":"低延迟补充工作点","textChars":8,"textLines":1,"bbox":[650,208,340,28]}
+{"kind":"textbox","id":"sh/mxkv2x4n","slide":10,"text":"aggressive5b：96.55%，11,025 cycles","textPreview":"aggressive5b：96.55%，11,025 cycles","textChars":33,"textLines":1,"bbox":[650,251,470,40]}
+{"kind":"shape","id":"sh/onm5kvup","slide":10,"bbox":[72,365,1136,2]}
+{"kind":"textbox","id":"sh/povmd0ba","slide":10,"text":"下一次合并前必须补齐：成员 7 的 Level 2 最终结果、成员 8 的结果分析页、成员 3–6 的已冻结模块 PPT。","textPreview":"下一次合并前必须补齐：成员 7 的 Level 2 最终结果、成员 8 的结果分析页、成员 3–6 的已冻结模块 PPT。","textChars":61,"textLines":1,"bbox":[72,425,1050,62]}
+{"kind":"notes","id":"nt/id631y","slide":10,"text":"结论中不能把 background 负样本纳入十分类 Accuracy，也不能混用 optimized 与 aggressive5b 的网络定义。"}

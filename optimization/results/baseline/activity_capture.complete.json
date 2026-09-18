@@ -1,0 +1,9 @@
+{
+  "sha256": "a0cf38ec37be1ea747bbe8d090c0cd05abdcc8e290393376031429ace8456f5a",
+  "bytes": 31538902,
+  "observed_objects": 8325,
+  "external_memory_model": "hold previous output on out-of-range speculative reads",
+  "external_memory_modules": 40,
+  "replay_raw_logits_matched": 30,
+  "passing_cosim_report": "optimization/build/baseline/solution1/sim/report/lenet_accelerator_with_weights_cosim.rpt"
+}

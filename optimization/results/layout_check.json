@@ -1,0 +1,92 @@
+{
+  "flatten_references": [
+    {
+      "pool2": "reference/fixed/sample_00000/pool2.txt",
+      "flatten": "reference/fixed/sample_00000/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/fixed/sample_00001/pool2.txt",
+      "flatten": "reference/fixed/sample_00001/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/fixed/sample_00002/pool2.txt",
+      "flatten": "reference/fixed/sample_00002/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/fixed/sample_00003/pool2.txt",
+      "flatten": "reference/fixed/sample_00003/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/fixed/sample_00004/pool2.txt",
+      "flatten": "reference/fixed/sample_00004/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/float/sample_00000/pool2.txt",
+      "flatten": "reference/float/sample_00000/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/float/sample_00001/pool2.txt",
+      "flatten": "reference/float/sample_00001/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/float/sample_00002/pool2.txt",
+      "flatten": "reference/float/sample_00002/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/float/sample_00003/pool2.txt",
+      "flatten": "reference/float/sample_00003/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    },
+    {
+      "pool2": "reference/float/sample_00004/pool2.txt",
+      "flatten": "reference/float/sample_00004/flatten.txt",
+      "values": 256,
+      "mismatches": 0
+    }
+  ],
+  "banked_gathers": [
+    {
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "checked_addresses": 14400,
+      "mismatches": 0,
+      "out_of_bounds": 0
+    },
+    {
+      "input_shape": [
+        6,
+        12,
+        12
+      ],
+      "checked_addresses": 9600,
+      "mismatches": 0,
+      "out_of_bounds": 0
+    }
+  ],
+  "pool2_fc1_shape": [
+    16,
+    4,
+    4
+  ],
+  "fc1_input_index": "16*c + 4*h + w"
+}

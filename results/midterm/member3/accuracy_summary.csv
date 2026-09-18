@@ -1,0 +1,11 @@
+configuration,weight_bits,activation_bits,accumulator_bits,accuracy_percent,accuracy_drop_pp,correct,total,prediction_mismatch_vs_float,selected,source_file
+Float,,,,98.97,0,9897,10000,0,false,provided_by_member3/成员2_Float/baseline_accuracy.json
+W8/A8,8,8,24,98.79,0.18,9879,10000,60,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W9/A9,9,9,26,98.86,0.11,9886,10000,27,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W10/A10,10,10,28,98.98,-0.01,9898,10000,16,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W11/A11,11,11,30,98.92,0.05,9892,10000,11,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W12/A12,12,12,32,98.94,0.03,9894,10000,7,true,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W13/A13,13,13,34,98.95,0.02,9895,10000,2,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W14/A14,14,14,36,98.97,0,9897,10000,0,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W15/A15,15,15,38,98.97,0,9897,10000,0,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv
+W16/A16,16,16,40,98.97,0,9897,10000,0,false,provided_by_member3/成员3_Fixed/quant_accuracy.csv

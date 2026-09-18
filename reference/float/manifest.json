@@ -1,0 +1,246 @@
+{
+  "network": {
+    "network": "LeNet5-MNIST",
+    "input_layout": "CHW",
+    "input_shape": [
+      1,
+      28,
+      28
+    ],
+    "input_range": [
+      0.0,
+      1.0
+    ],
+    "weight_layout": "[out_channel][in_channel][kernel_h][kernel_w] for Conv; [out][in] for FC",
+    "flatten_order": "C-contiguous CHW: c * H * W + h * W + w",
+    "activation": "ReLU after each Conv and first two FC layers",
+    "pooling": "2x2 non-overlapping max pooling, stride 2",
+    "bias": false,
+    "num_classes": 10,
+    "layers": [
+      {
+        "name": "input",
+        "input_shape": [
+          1,
+          28,
+          28
+        ],
+        "output_shape": [
+          1,
+          28,
+          28
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "conv1",
+        "input_shape": [
+          1,
+          28,
+          28
+        ],
+        "output_shape": [
+          6,
+          24,
+          24
+        ],
+        "kernel": 5,
+        "stride": 1,
+        "padding": 0
+      },
+      {
+        "name": "relu1",
+        "input_shape": [
+          6,
+          24,
+          24
+        ],
+        "output_shape": [
+          6,
+          24,
+          24
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "pool1",
+        "input_shape": [
+          6,
+          24,
+          24
+        ],
+        "output_shape": [
+          6,
+          12,
+          12
+        ],
+        "kernel": 2,
+        "stride": 2,
+        "padding": 0
+      },
+      {
+        "name": "conv2",
+        "input_shape": [
+          6,
+          12,
+          12
+        ],
+        "output_shape": [
+          16,
+          8,
+          8
+        ],
+        "kernel": 5,
+        "stride": 1,
+        "padding": 0
+      },
+      {
+        "name": "relu2",
+        "input_shape": [
+          16,
+          8,
+          8
+        ],
+        "output_shape": [
+          16,
+          8,
+          8
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "pool2",
+        "input_shape": [
+          16,
+          8,
+          8
+        ],
+        "output_shape": [
+          16,
+          4,
+          4
+        ],
+        "kernel": 2,
+        "stride": 2,
+        "padding": 0
+      },
+      {
+        "name": "flatten",
+        "input_shape": [
+          16,
+          4,
+          4
+        ],
+        "output_shape": [
+          256
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "fc1",
+        "input_shape": [
+          256
+        ],
+        "output_shape": [
+          120
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "relu3",
+        "input_shape": [
+          120
+        ],
+        "output_shape": [
+          120
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "fc2",
+        "input_shape": [
+          120
+        ],
+        "output_shape": [
+          84
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "relu4",
+        "input_shape": [
+          84
+        ],
+        "output_shape": [
+          84
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      },
+      {
+        "name": "fc3",
+        "input_shape": [
+          84
+        ],
+        "output_shape": [
+          10
+        ],
+        "kernel": null,
+        "stride": null,
+        "padding": 0
+      }
+    ]
+  },
+  "samples": [
+    {
+      "index": 0,
+      "label": 7,
+      "predicted": 7,
+      "correct": true,
+      "sample_dir": "reference\\float\\sample_00000"
+    },
+    {
+      "index": 1,
+      "label": 2,
+      "predicted": 2,
+      "correct": true,
+      "sample_dir": "reference\\float\\sample_00001"
+    },
+    {
+      "index": 2,
+      "label": 1,
+      "predicted": 1,
+      "correct": true,
+      "sample_dir": "reference\\float\\sample_00002"
+    },
+    {
+      "index": 3,
+      "label": 0,
+      "predicted": 0,
+      "correct": true,
+      "sample_dir": "reference\\float\\sample_00003"
+    },
+    {
+      "index": 4,
+      "label": 4,
+      "predicted": 4,
+      "correct": true,
+      "sample_dir": "reference\\float\\sample_00004"
+    }
+  ]
+}

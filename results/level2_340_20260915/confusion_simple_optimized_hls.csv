@@ -1,0 +1,11 @@
+row_is,true_label,pred_0,pred_1,pred_2,pred_3,pred_4,pred_5,pred_6,pred_7,pred_8,pred_9
+true_label,0,19,0,0,0,6,0,0,0,9,0
+true_label,1,12,0,0,0,19,0,0,0,3,0
+true_label,2,1,0,0,0,13,0,0,0,20,0
+true_label,3,6,0,0,0,5,0,0,0,23,0
+true_label,4,8,0,0,0,10,0,0,0,16,0
+true_label,5,1,0,0,0,5,0,0,0,27,1
+true_label,6,4,0,0,0,9,0,0,0,21,0
+true_label,7,16,0,0,0,6,0,0,0,12,0
+true_label,8,10,0,0,0,3,0,0,0,21,0
+true_label,9,11,0,0,0,6,0,0,0,17,0

@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-09-08T15:34:02.704962+00:00",
+  "dataset": {
+    "dataset": "MNIST",
+    "split": "train + t10k",
+    "source_urls": [
+      "https://storage.googleapis.com/cvdf-datasets/mnist/",
+      "http://yann.lecun.com/exdb/mnist/"
+    ],
+    "files": [
+      {
+        "name": "train-images-idx3-ubyte",
+        "gzip": "train-images-idx3-ubyte.gz",
+        "raw": "train-images-idx3-ubyte",
+        "bytes": 47040016,
+        "sha256": "ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db",
+        "count": 60000,
+        "rows": 28,
+        "cols": 28,
+        "magic": 2051
+      },
+      {
+        "name": "train-labels-idx1-ubyte",
+        "gzip": "train-labels-idx1-ubyte.gz",
+        "raw": "train-labels-idx1-ubyte",
+        "bytes": 60008,
+        "sha256": "65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5",
+        "count": 60000,
+        "rows": null,
+        "cols": null,
+        "magic": 2049
+      },
+      {
+        "name": "t10k-images-idx3-ubyte",
+        "gzip": "t10k-images-idx3-ubyte.gz",
+        "raw": "t10k-images-idx3-ubyte",
+        "bytes": 7840016,
+        "sha256": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7",
+        "count": 10000,
+        "rows": 28,
+        "cols": 28,
+        "magic": 2051
+      },
+      {
+        "name": "t10k-labels-idx1-ubyte",
+        "gzip": "t10k-labels-idx1-ubyte.gz",
+        "raw": "t10k-labels-idx1-ubyte",
+        "bytes": 10008,
+        "sha256": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2",
+        "count": 10000,
+        "rows": null,
+        "cols": null,
+        "magic": 2049
+      }
+    ]
+  },
+  "source": {
+    "git_commit": "82997ac5834710809bc27373b4e5f862ec936f97",
+    "canonical_tree": "src/",
+    "checkpoint_sha256": "c263e8fbdb6194f9323cdb199588be9422eb0f7f3c21ee59d4b8452ad02e16cb"
+  },
+  "hls": {
+    "tool": "Vivado HLS 2018.3 Build 2405991",
+    "executable": "F:/Vivado/Vivado/2018.3/bin/vivado_hls.bat",
+    "part": "xc7z020clg400-1",
+    "clock_ns": 10,
+    "float_macros": [],
+    "fixed_macros": [
+      "LENET_USE_FIXED",
+      "LENET_ACC_INT"
+    ],
+    "commands": {
+      "float": "F:/Vivado/Vivado/2018.3/bin/vivado_hls.bat -f scripts/hls/csim_float.tcl",
+      "fixed": "F:/Vivado/Vivado/2018.3/bin/vivado_hls.bat -f scripts/hls/csim_fixed.tcl"
+    }
+  },
+  "portable_driver": {
+    "compiler": "MSYS2 ucrt64 g++ 15.1",
+    "source": "src/tests/tb_mnist_10k.cpp + src/m6/hls/lenet_accelerator.cpp + src/m4/hls/conv2d_systolic.cpp"
+  },
+  "results": {
+    "hls_float_hls_csim_10000.csv": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\hls_float_hls_csim_10000.csv",
+      "bytes": 1270195,
+      "sha256": "552a88f49e8a5e74356a200700b5181fc08dedfed91ef485c3aaf1346432a04e"
+    },
+    "hls_fixed_hls_csim_10000.csv": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\hls_fixed_hls_csim_10000.csv",
+      "bytes": 531849,
+      "sha256": "9f7db59318f4fbada5ed511f4e69c0b5730b311ade737cf766b6c5987a2b8e9c"
+    },
+    "python_float_10000.csv": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\python_float_10000.csv",
+      "bytes": 2015769,
+      "sha256": "81b630de2c4fee12e54d00e472841dc9bd8b445c772e8c81cc8361f0ab067dbf"
+    },
+    "python_fixed_10000.csv": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\python_fixed_10000.csv",
+      "bytes": 531849,
+      "sha256": "9f7db59318f4fbada5ed511f4e69c0b5730b311ade737cf766b6c5987a2b8e9c"
+    },
+    "float_vivado_hls_csim_10000.log": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\float_vivado_hls_csim_10000.log",
+      "bytes": 7972,
+      "sha256": "c67fb92823ce0bfd15074597dbfe3cef8ec6f975fefd5e6280269cd69e8dafd4"
+    },
+    "fixed_vivado_hls_csim_10000.log": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\fixed_vivado_hls_csim_10000.log",
+      "bytes": 18140,
+      "sha256": "f6981e51aae7e30f6acdcfa203e347da0fbcfaf664f00a938223a6ab907103ec"
+    },
+    "hls_accuracy_summary.json": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\hls_accuracy_summary.json",
+      "bytes": 1935,
+      "sha256": "eb921b56fbd7b8bbcec9e7cc2461d71b457196549391978b1173519f63085d79"
+    },
+    "hls_accuracy_per_sample.csv": {
+      "path": "F:\\files\\FPGA_LeNet\\results\\accuracy\\hls_accuracy_per_sample.csv",
+      "bytes": 423372,
+      "sha256": "6e4dd585267835317e07d9f8efea51dd2461bf236b3c1826b69b3a4372311f0e"
+    }
+  }
+}

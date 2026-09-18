@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "batch": "members3_7_100_003",
+  "processed": 100,
+  "cumulative": 340,
+  "pipeline_sha256": "f934d340129aef372553e141e809442751b98c585e6b70cac06da4706d578899",
+  "code_sha256": {
+    "hls/preprocess/level2_preprocess.cpp": "87c0b21fe6c6cb397a6a9a1ad2537b7654b6f0de1864f47dd3cdf74e55f1ea8d",
+    "hls/preprocess/level2_preprocess.h": "3b28c4908fadc56750b87d04c16ba4ff7e7d0640e5ac3cd8b8cd8a334903f924",
+    "scripts/level2_preprocess_driver.cpp": "5733099f8fb3d102051dd505d36e063b4f772d6f0c90952c69753e6fe4a573cc",
+    "scripts/export_level2_rgb.ps1": "91adba72a57f9235357e5af7f7fc80014d9d84275aaf5024d554f4a9568f117d",
+    "scripts/prepare_member7_level2.py": "0f8569f487be5831d5321b8904b94253ad9228aa6ab637c9a136a8e04cb52ccc"
+  },
+  "source_dataset_version": "intake_005",
+  "utc": "2026-09-15T01:54:35.821215+00:00",
+  "full_roi_invalid": [],
+  "model_inference_executed": false,
+  "visual_review": "reviewed_with_observations",
+  "duplicate_groups": [
+    [
+      "m3_2_01",
+      "m3_2_02"
+    ]
+  ],
+  "unique_pixel_images": 339
+}

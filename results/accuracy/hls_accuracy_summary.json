@@ -1,0 +1,71 @@
+{
+  "dataset": "MNIST t10k",
+  "samples": 10000,
+  "source_commit": "unknown (\u95c6\u55d8\u579a\u9353\ue21b\u6e70\u93c8\ue044\u57b5\u6fee\u5b2a\u5bf2 Git)",
+  "hls_version": "portable g++ C simulation (not Vivado HLS CSim)",
+  "float_compile_macros": "none",
+  "fixed_compile_macros": "LENET_USE_FIXED LENET_ACC_INT",
+  "python_baseline": {
+    "float_correct": 9897,
+    "float_accuracy": 0.9897,
+    "fixed_correct": 9894,
+    "fixed_accuracy": 0.9894,
+    "note": "Python-only reference; not an HLS accuracy result"
+  },
+  "hls_float": {
+    "mode": "float",
+    "samples": 10000,
+    "correct": 9897,
+    "accuracy": 0.9897,
+    "hls_vs_python_float_max_abs_logit_error": 9.520336913482197e-06,
+    "hls_vs_python_float_mean_abs_logit_error": 8.576233168488731e-07,
+    "hls_vs_python_float_p99_abs_logit_error": 3.765040405507846e-06,
+    "hls_vs_python_float_logit_mismatch_gt_1e-5": 0,
+    "hls_vs_python_float_prediction_mismatch": 0,
+    "first_five_hls_predictions": [
+      7,
+      2,
+      1,
+      0,
+      4
+    ],
+    "first_five_labels": [
+      7,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "hls_fixed": {
+    "mode": "fixed",
+    "samples": 10000,
+    "correct": 9894,
+    "accuracy": 0.9894,
+    "hls_vs_python_fixed_raw_mismatch": 0,
+    "hls_vs_python_fixed_raw_total_values": 100000,
+    "hls_vs_python_fixed_raw_max_abs_diff": 0,
+    "hls_vs_python_fixed_raw_mean_abs_diff": 0.0,
+    "hls_vs_python_fixed_prediction_mismatch": 0,
+    "first_five_hls_predictions": [
+      7,
+      2,
+      1,
+      0,
+      4
+    ],
+    "first_five_labels": [
+      7,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "files": {
+    "hls_float": "C:\\Users\\zhuoy\\Desktop\\\u65e0\\\u5927\u56db\u4e0a\\\u5c0f\u5b66\u671f\\FPGA_LeNet_final\\results\\accuracy\\portable_float_10000.csv",
+    "hls_fixed": "C:\\Users\\zhuoy\\Desktop\\\u65e0\\\u5927\u56db\u4e0a\\\u5c0f\u5b66\u671f\\FPGA_LeNet_final\\results\\accuracy\\portable_fixed_10000.csv",
+    "python_float": "C:\\Users\\zhuoy\\Desktop\\\u65e0\\\u5927\u56db\u4e0a\\\u5c0f\u5b66\u671f\\FPGA_LeNet_final\\results\\accuracy\\python_float_10000.csv",
+    "python_fixed": "C:\\Users\\zhuoy\\Desktop\\\u65e0\\\u5927\u56db\u4e0a\\\u5c0f\u5b66\u671f\\FPGA_LeNet_final\\results\\accuracy\\python_fixed_10000.csv"
+  }
+}

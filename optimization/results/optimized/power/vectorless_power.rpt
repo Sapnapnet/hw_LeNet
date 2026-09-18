@@ -1,0 +1,574 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Sun Sep 13 14:30:49 2026
+| Host             : LAPTOP-3ECJV11A running 64-bit major release  (build 9200)
+| Command          : report_power -file vectorless_power.rpt
+| Design           : lenet_accelerator_with_weights
+| Device           : xc7z020clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.823        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.707        |
+| Device Static (W)        | 0.115        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 75.5         |
+| Junction Temperature (C) | 34.5         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.070 |        3 |       --- |             --- |
+| Slice Logic              |     0.085 |    35845 |       --- |             --- |
+|   LUT as Logic           |     0.071 |    10953 |     53200 |           20.59 |
+|   Register               |     0.010 |    21818 |    106400 |           20.51 |
+|   F7/F8 Muxes            |     0.002 |     1115 |     53200 |            2.10 |
+|   CARRY4                 |     0.001 |      311 |     13300 |            2.34 |
+|   LUT as Shift Register  |    <0.001 |      193 |     17400 |            1.11 |
+|   LUT as Distributed RAM |    <0.001 |       81 |     17400 |            0.47 |
+|   Others                 |     0.000 |      750 |       --- |             --- |
+| Signals                  |     0.303 |    38299 |       --- |             --- |
+| Block RAM                |     0.011 |     12.5 |       140 |            8.93 |
+| DSPs                     |     0.239 |      201 |       220 |           91.36 |
+| Static Power             |     0.115 |          |           |                 |
+| Total                    |     0.823 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.717 |       0.707 |      0.011 |
+| Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.022 |       0.000 |      0.022 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------+--------+-----------------+
+| Clock  | Domain | Constraint (ns) |
++--------+--------+-----------------+
+| ap_clk | ap_clk |            10.0 |
++--------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------+-----------+
+| Name                                 | Power (W) |
++--------------------------------------+-----------+
+| lenet_accelerator_with_weights       |     0.707 |
+|   fc1_buffer_V_U                     |     0.002 |
+|     lenet_acceleratorncg_ram_U       |     0.002 |
+|   fc2_buffer_V_U                     |     0.001 |
+|     lenet_acceleratorpcA_ram_U       |     0.001 |
+|   grp_conv_banked_1_fu_2982          |     0.191 |
+|     lenet_acceleratorg8j_U15         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U16         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U17         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U18         |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U19         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U20         |     0.006 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.006 |
+|     lenet_acceleratorg8j_U21         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U22         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U23         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U24         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U25         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U26         |     0.005 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.005 |
+|     lenet_acceleratorg8j_U27         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U28         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U29         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U30         |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U31         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U32         |     0.005 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.005 |
+|     lenet_acceleratorg8j_U33         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U34         |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U35         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U36         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U37         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U38         |     0.005 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.005 |
+|     lenet_acceleratorg8j_U39         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U40         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U41         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U42         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U43         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U44         |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U45         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U46         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U47         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U48         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U49         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U50         |     0.006 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.006 |
+|     lenet_acceleratorg8j_U51         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U52         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U53         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U54         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U55         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U56         |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U57         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U58         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U59         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U60         |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U61         |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U62         |     0.006 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.006 |
+|   grp_conv_banked_fu_2936            |     0.421 |
+|     lenet_acceleratorg8j_U121        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U122        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U123        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U124        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U125        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U126        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U127        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U128        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U129        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U130        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U131        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U132        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U133        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U134        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U135        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U136        |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U137        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U138        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U139        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U140        |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U141        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U142        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U143        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U144        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U145        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U146        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U147        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U148        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U149        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U150        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U151        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U152        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U153        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U154        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U155        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U156        |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U157        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U158        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U159        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U160        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U161        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U162        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U163        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U164        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U165        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U166        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U167        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U168        |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U169        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U170        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U171        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U172        |     0.005 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.005 |
+|     lenet_acceleratorg8j_U173        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U174        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U175        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U176        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U177        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U178        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U179        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U180        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U181        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U182        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U183        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U184        |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U185        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U186        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U187        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U188        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U189        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U190        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U191        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U192        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U193        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U194        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U195        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U196        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U197        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U198        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U199        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U200        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U201        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U202        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U203        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U204        |     0.004 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.004 |
+|     lenet_acceleratorg8j_U205        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U206        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U207        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U208        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U209        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U210        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U211        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U212        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U213        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U214        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U215        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U216        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U217        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U218        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U219        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U220        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U221        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U222        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U223        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U224        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U225        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U226        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U227        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U228        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U229        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U230        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U231        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U232        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U233        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U234        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U235        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U236        |     0.005 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.005 |
+|     lenet_acceleratorg8j_U237        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U238        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U239        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U240        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U241        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U242        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U243        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U244        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U245        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U246        |     0.002 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.002 |
+|     lenet_acceleratorg8j_U247        |     0.003 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.003 |
+|     lenet_acceleratorg8j_U248        |     0.007 |
+|       lenet_acceleratorg8j_DSP48_0_U |     0.007 |
+|     lenet_acceleratoribs_U97         |     0.002 |
+|       lenet_acceleratoribs_div_U     |     0.002 |
+|     lenet_acceleratoribs_U98         |     0.001 |
+|       lenet_acceleratoribs_div_U     |     0.001 |
+|     lenet_acceleratoribs_U99         |     0.001 |
+|       lenet_acceleratoribs_div_U     |     0.001 |
+|   grp_relu_pool_fu_3008              |     0.002 |
+|   lenet_acceleratorNgs_U283          |     0.002 |
+|   lenet_acceleratorOgC_U284          |     0.002 |
+|   lenet_acceleratorQgW_U286          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U287          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U288          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U289          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U290          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U291          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U292          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U293          |     0.003 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.003 |
+|   lenet_acceleratorQgW_U294          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U295          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U296          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U297          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U298          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U299          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U300          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U301          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U302          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U303          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U304          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U305          |     0.003 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.003 |
+|   lenet_acceleratorQgW_U306          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U307          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U308          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U309          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
+|   lenet_acceleratorQgW_U310          |     0.002 |
+|     lenet_acceleratorQgW_DSP48_1_U   |     0.002 |
++--------------------------------------+-----------+
+
+

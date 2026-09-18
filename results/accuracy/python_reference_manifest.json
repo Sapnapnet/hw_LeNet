@@ -1,0 +1,10 @@
+{
+  "samples": 10000,
+  "input_scale": "pixel / 255.0 for float; round(pixel * 32 / 255) for fixed",
+  "fixed_format": "W12/A12, raw activation scale 1/32, narrow shift 11, ties-even, saturate",
+  "weights_root": "C:\\Users\\zhuoy\\Desktop\\\u65e0\\\u5927\u56db\u4e0a\\\u5c0f\u5b66\u671f\\FPGA_LeNet_final\\weights",
+  "outputs": [
+    "python_float_10000.csv",
+    "python_fixed_10000.csv"
+  ]
+}

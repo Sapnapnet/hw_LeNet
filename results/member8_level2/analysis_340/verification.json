@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "records_per_group": 340,
+  "groups": 6,
+  "total_predictions": 2040,
+  "raw_logits_compared": 6800,
+  "raw_logits_mismatches": 0,
+  "outcomes": {
+    "both_correct": 37,
+    "wrong_to_correct": 223,
+    "both_wrong": 67,
+    "correct_to_wrong": 13
+  },
+  "fixed_full_gain_pp": 61.76470588235294,
+  "full_fixed_vs_mnist_gap_pp": 22.46941176470588,
+  "float_fixed_prediction_difference_ids": {
+    "simple": [
+      "m6_3_01",
+      "m6_3_03",
+      "m6_6_05",
+      "m8_2_03",
+      "m8_3_04",
+      "m8_4_02",
+      "m8_5_05",
+      "m8_7_03",
+      "m5_8_03",
+      "m3_1_01",
+      "m7_3_03",
+      "m7_3_04"
+    ],
+    "full": [
+      "m6_2_02",
+      "m5_0_01",
+      "m7_0_02"
+    ]
+  },
+  "hls_scope": "g++ C simulation, not RTL co-simulation",
+  "inference_rerun": false,
+  "top_full_confusions": [
+    {
+      "label": "7",
+      "prediction": "3",
+      "count": 10
+    },
+    {
+      "label": "9",
+      "prediction": "3",
+      "count": 8
+    },
+    {
+      "label": "6",
+      "prediction": "5",
+      "count": 8
+    },
+    {
+      "label": "8",
+      "prediction": "3",
+      "count": 5
+    },
+    {
+      "label": "4",
+      "prediction": "9",
+      "count": 4
+    },
+    {
+      "label": "1",
+      "prediction": "8",
+      "count": 4
+    },
+    {
+      "label": "4",
+      "prediction": "8",
+      "count": 4
+    },
+    {
+      "label": "0",
+      "prediction": "2",
+      "count": 4
+    }
+  ]
+}

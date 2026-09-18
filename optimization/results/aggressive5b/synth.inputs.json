@@ -1,0 +1,30 @@
+﻿{
+    "started":  "2026-09-13T19:58:34.5401826+08:00",
+    "stage":  "synth",
+    "clock_ns":  10,
+    "tool":  "D:\\Xilinx\\Vivado\\2018.3",
+    "variant":  "aggressive5b",
+    "samples":  3,
+    "source_sha256":  {
+                          "hls\\top\\lenet_accelerator.h":  "A0EFFC1A158B652F99FF79DF4B87AF6B5F7951B613A2BBF97B58B02638F182E7",
+                          "hls\\operators\\argmax10.h":  "53C3CD6BC3BCDBCD01C42452B7333678D7A047A081E5854EBFC39F1C5B82A3F4",
+                          "optimization\\lenet_fast.cpp":  "4FA9C3AEC69527714875136C3FE8F81457BE67394AD88AA8C745EFB45FCF0C3F",
+                          "config\\network_config.h":  "63006DFC2283B7611F1A03D81C53323E966FF437DD458AF70C3547A568BBEF43",
+                          "config\\quant_params.h":  "1475FF03042A66988180A24F3D2A12BDDE16EDD4D358F8202DDD2F4F80D0125B",
+                          "hls\\buffer\\buffer.h":  "F1C0002DE7FB940B29B8EF13608B6FEECA67C5C32448A0A5849DC583B0EB135A",
+                          "hls\\conv\\conv2d_systolic.h":  "1BC379841E5F860A87734A4FC953F6A415D7FCC2F994D9BA0833C296508F8FF7",
+                          "hls\\conv\\conv2d_gemm.h":  "ECCDA2C700A776744A7C50C4250A5272340227C6C3BE512CD1AB1B16F036E560",
+                          "hls\\operators\\maxpool2d.h":  "3CE6BA42F64F33828C87DF373A5E203778916A96F5143EB7B6362C85A1D64F08",
+                          "hls\\operators\\relu.h":  "50065FC5640BE6E89553CA4DF0BAF323602C602234580F68E7246D923A1993F1",
+                          "hls\\conv\\conv2d_systolic.cpp":  "F6A8243B8EB7ED544DDED7ECF303EAD98B89F34221BEE554FE309AFED236060F",
+                          "hls\\top\\controller.h":  "832EAAFBB171AD51E1BA3688B22590A1BB18D6C9B80B3A26283E95490518EC97",
+                          "hls\\operators\\flatten.h":  "5DB8D4107B57FB639ED8112755951760ED3D60BDA9684A62A5AE05F8C51409D7",
+                          "optimization\\fast_kernels.h":  "7BAFBF52E6F1F020AAE9213F02BCA224ABFCDE1E2B4872845185E6152EC2849B",
+                          "hls\\buffer\\address_gen.h":  "C1A6F49A8ACA993EF64160CBE05E6BEC882A7370963147866FAFC16013878226",
+                          "hls\\conv\\gemm_systolic.h":  "1726035FAB4B4AA508CC86686D0AC2F59512C993107E37BD712F3180173FA527",
+                          "hls\\operators\\fc.h":  "97B428AEA1CC78133CB391A7CFF235B9F86ECFBB345A599B394099D0F8692DE6",
+                          "hls\\top\\lenet_accelerator.cpp":  "23EF7FCCCC69490E36C78386951BA658ED399830FD091F6679D9002E56756E84",
+                          "config\\types.h":  "645087E3ED9234E7D8991A6663F94ABFADF2AB0FE16B2051A68954F0291017DD"
+                      },
+    "part":  "xc7z020clg400-1"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "random_conv1",
+  "input_shape": [
+    1,
+    28,
+    28
+  ],
+  "weight_shape": [
+    6,
+    1,
+    5,
+    5
+  ],
+  "output_shape": [
+    6,
+    24,
+    24
+  ],
+  "input_format": "A12 I7 F5 raw signed integer",
+  "weight_format": "W12 I1 F11 raw signed integer",
+  "right_shift": 11,
+  "rounding": "nearest_ties_even",
+  "overflow": "saturation",
+  "expected_saturations": 0,
+  "layout": "CHW input/output, OIHW weight"
+}

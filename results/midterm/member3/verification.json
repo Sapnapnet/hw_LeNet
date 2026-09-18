@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-07",
+  "scope": "Member 3 package and summary verification; no model inference or HLS rerun",
+  "package": "member8-fixed-accuracy-v1",
+  "config_version": "member3-fixed-v1",
+  "manifest_files_verified": 10,
+  "all_package_files_unchanged": true,
+  "source_sha256": {
+    "MANIFEST.json": "e6917f539872b67383aee3c1ad40c2ddbdef271e266f7cd0dc5d904f4ad0cfc8",
+    "PPT文案.md": "2891540c8e341117204122bf4ee95b81b8c2f38859faea2bfcd3790b46ce53ce",
+    "README.md": "9140336c49af495bcf118659f7ab1a7938fe1b27a956dadf0abf2431e5927680",
+    "tools/verify_package.py": "90e025920776f2c0eb4bbfde58eafd7507cbd76d08cef10956e8d27f3daf1a43",
+    "成员2_Float/baseline_accuracy.json": "691fa2c62de4c82bd39135766b04bbb0304ba2020ae7935fabcc9c2c3061fad5",
+    "成员2_Float/baseline_accuracy.txt": "e423ec93109d0cc3c0d1a0b86b6e145754c59a9dcfaebc42c6cff312c58983ed",
+    "成员3_Fixed/bitwidth_accuracy.png": "a79710b6ffee57b9987acbea242083b353bb38406d5e392abdb1e4971391b010",
+    "成员3_Fixed/integer_full_validation.json": "98981566b2005104c5af04448b888b891b7031db91858b3599dd4003fd3580a9",
+    "成员3_Fixed/quant_accuracy.csv": "a0578b49cdc90245e8966e3434c68d0f699a25fb0b555bfc72f1cea9898752ba",
+    "成员3_Fixed/quant_config.json": "21712c0961ad7220e91e9e62d5be0385e5963d297258944c8d617fa979a9ebcb",
+    "成员3_Fixed/run_summary.json": "9e0352149b094be40ef67c545421f2d299ddecb7817dbaa2d337e39b399d52ac"
+  },
+  "checks": {
+    "inventory_bytes_sha256": "PASS",
+    "nine_csv_rows_accuracy_and_percentage_point_arithmetic": "PASS",
+    "selected_csv_config_and_run_summary": "PASS",
+    "integer_validation_record_consistency": "PASS",
+    "float_source_hash": "PASS",
+    "checkpoint_hash_cross_reference": "PASS (recorded hashes only; checkpoint not present in this package)",
+    "fixed_format_bits_scales": "PASS",
+    "selection_policy": "PASS",
+    "figure_copy_sha256": "PASS"
+  },
+  "derived_outputs": {
+    "accuracy_summary.csv": "6f39857bce949a5f6e53646bfc3db9d99cbe9a5ab0f181582fc28a7e29e1bb2e",
+    "../../figures/member3_bitwidth_accuracy.png": "a79710b6ffee57b9987acbea242083b353bb38406d5e392abdb1e4971391b010"
+  },
+  "full_inference_rerun": false,
+  "hls_c_simulation": "NOT_RUN",
+  "hls_synthesis": "NOT_RUN",
+  "selection_uses_test_set": true,
+  "final_checks": {
+    "saved_csv_rows": 10,
+    "saved_csv_decimal_arithmetic": "PASS",
+    "csv_source_paths": "PASS",
+    "markdown_links_and_anchors_checked": 74,
+    "markdown_values": "PASS",
+    "step3_step4_partial_status": "PASS",
+    "source_and_derived_hashes_rechecked": "PASS"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "sha256": "b8905199b8cd19166f944d94e83f3d5c45c009e451fc3b976e8813cf54c56d43",
+  "bytes": 29688073,
+  "observed_objects": 9877,
+  "passing_cosim_report": "optimization/build/optimized/solution1/sim/report/lenet_accelerator_with_weights_cosim.rpt"
+}

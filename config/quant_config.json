@@ -1,0 +1,17 @@
+{
+  "version": "member3-fixed-v1",
+  "network": "LeNet5-MNIST",
+  "bias": false,
+  "formats": {
+    "activation": {"bits": 12, "integer_bits": 7, "fraction_bits": 5, "scale": 0.03125},
+    "weight": {"bits": 12, "integer_bits": 1, "fraction_bits": 11, "scale": 0.00048828125},
+    "accumulator": {"bits": 32, "integer_bits": 16, "fraction_bits": 16, "scale": 0.0000152587890625},
+    "output": {"bits": 12, "integer_bits": 7, "fraction_bits": 5, "scale": 0.03125}
+  },
+  "rounding": "nearest_ties_even",
+  "overflow": "saturation",
+  "hls_quantization": "AP_RND_CONV",
+  "hls_overflow": "AP_SAT",
+  "requantization_right_shift": 11,
+  "mac": "full-precision product and accumulator; narrow once after each dot product"
+}

@@ -1,0 +1,68 @@
+{
+  "checkpoint": "C:\\Users\\zhuoy\\Desktop\\\u65e0\\\u5927\u56db\u4e0a\\\u5c0f\u5b66\u671f\\weights\\lenet_float.pt",
+  "device": "cuda",
+  "best_epoch": 10,
+  "best_accuracy": 0.9897,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5452040797074635,
+      "train_accuracy": 0.8418166666666667,
+      "test_accuracy": 0.9539
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.13140153477390606,
+      "train_accuracy": 0.9594333333333334,
+      "test_accuracy": 0.9734
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.09250650841196378,
+      "train_accuracy": 0.9713833333333334,
+      "test_accuracy": 0.9783
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.07329163142442703,
+      "train_accuracy": 0.9779333333333333,
+      "test_accuracy": 0.9831
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.06253938208023707,
+      "train_accuracy": 0.9807,
+      "test_accuracy": 0.9847
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.05364025504986445,
+      "train_accuracy": 0.98305,
+      "test_accuracy": 0.9837
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.045559367434183755,
+      "train_accuracy": 0.9854333333333334,
+      "test_accuracy": 0.9866
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.04163790304362774,
+      "train_accuracy": 0.9870333333333333,
+      "test_accuracy": 0.9869
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.037151692843437195,
+      "train_accuracy": 0.9884333333333334,
+      "test_accuracy": 0.9864
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.03278018281981349,
+      "train_accuracy": 0.9897166666666667,
+      "test_accuracy": 0.9897
+    }
+  ]
+}

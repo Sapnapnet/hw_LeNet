@@ -1,0 +1,2445 @@
+{
+  "date": "2026-09-08",
+  "version": "member7-alignment-v1",
+  "scope": "Recomputed differences from existing dump files, no execution of HLS or supplied scripts",
+  "float_mismatch_threshold": 1e-05,
+  "fixed_raw_threshold": 0,
+  "dequantization_scale": 0.03125,
+  "quant_is_informational": true,
+  "aggregation": "max over all samples; mean weighted by element count (equal per-layer sample sizes); mismatch summed",
+  "aggregates": {
+    "float": [
+      {
+        "layer": "input",
+        "samples": 5,
+        "element_count": 3920,
+        "max_abs_error": 4.997940117323907e-10,
+        "mean_abs_error": 4.188244852485788e-11,
+        "mismatch": 0
+      },
+      {
+        "layer": "conv1",
+        "samples": 5,
+        "element_count": 17280,
+        "max_abs_error": 4.814550780274374e-07,
+        "mean_abs_error": 1.4000717111844388e-08,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu1",
+        "samples": 5,
+        "element_count": 17280,
+        "max_abs_error": 4.814550780274374e-07,
+        "mean_abs_error": 1.0272233361568152e-08,
+        "mismatch": 0
+      },
+      {
+        "layer": "pool1",
+        "samples": 5,
+        "element_count": 4320,
+        "max_abs_error": 4.780590820985253e-07,
+        "mean_abs_error": 1.4466329779110637e-08,
+        "mismatch": 0
+      },
+      {
+        "layer": "conv2",
+        "samples": 5,
+        "element_count": 5120,
+        "max_abs_error": 3.847631836251253e-06,
+        "mean_abs_error": 3.0625742613292506e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu2",
+        "samples": 5,
+        "element_count": 5120,
+        "max_abs_error": 2.864505614930124e-06,
+        "mean_abs_error": 1.473439258760811e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "pool2",
+        "samples": 5,
+        "element_count": 1280,
+        "max_abs_error": 2.864505614930124e-06,
+        "mean_abs_error": 2.373057359433034e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "flatten",
+        "samples": 5,
+        "element_count": 1280,
+        "max_abs_error": 2.864505614930124e-06,
+        "mean_abs_error": 2.373057359433034e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "fc1",
+        "samples": 5,
+        "element_count": 600,
+        "max_abs_error": 5.106075439798019e-06,
+        "mean_abs_error": 7.101444894073704e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu3",
+        "samples": 5,
+        "element_count": 600,
+        "max_abs_error": 5.106075439798019e-06,
+        "mean_abs_error": 3.7198056989923635e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "fc2",
+        "samples": 5,
+        "element_count": 420,
+        "max_abs_error": 3.823732910746003e-06,
+        "mean_abs_error": 7.840354671941772e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu4",
+        "samples": 5,
+        "element_count": 420,
+        "max_abs_error": 3.823732910746003e-06,
+        "mean_abs_error": 4.890220326806852e-07,
+        "mismatch": 0
+      },
+      {
+        "layer": "logits",
+        "samples": 5,
+        "element_count": 50,
+        "max_abs_error": 3.5786010741389873e-06,
+        "mean_abs_error": 1.3754158245010695e-06,
+        "mismatch": 0
+      }
+    ],
+    "raw": [
+      {
+        "layer": "input",
+        "samples": 5,
+        "element_count": 3920,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "conv1",
+        "samples": 5,
+        "element_count": 17280,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu1",
+        "samples": 5,
+        "element_count": 17280,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "pool1",
+        "samples": 5,
+        "element_count": 4320,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "conv2",
+        "samples": 5,
+        "element_count": 5120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu2",
+        "samples": 5,
+        "element_count": 5120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "pool2",
+        "samples": 5,
+        "element_count": 1280,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "flatten",
+        "samples": 5,
+        "element_count": 1280,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "fc1",
+        "samples": 5,
+        "element_count": 600,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu3",
+        "samples": 5,
+        "element_count": 600,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "fc2",
+        "samples": 5,
+        "element_count": 420,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "relu4",
+        "samples": 5,
+        "element_count": 420,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      },
+      {
+        "layer": "logits",
+        "samples": 5,
+        "element_count": 50,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0
+      }
+    ],
+    "quant": [
+      {
+        "layer": "input",
+        "samples": 5,
+        "element_count": 3920,
+        "max_abs_error": 0.015563726,
+        "mean_abs_error": 0.0014505175961122437,
+        "mismatch": 650
+      },
+      {
+        "layer": "conv1",
+        "samples": 5,
+        "element_count": 17280,
+        "max_abs_error": 0.05824172000000005,
+        "mean_abs_error": 0.00512338960714386,
+        "mismatch": 9338
+      },
+      {
+        "layer": "relu1",
+        "samples": 5,
+        "element_count": 17280,
+        "max_abs_error": 0.0496029899999999,
+        "mean_abs_error": 0.003371302793718831,
+        "mismatch": 6111
+      },
+      {
+        "layer": "pool1",
+        "samples": 5,
+        "element_count": 4320,
+        "max_abs_error": 0.041616680000000184,
+        "mean_abs_error": 0.004545269045109282,
+        "mismatch": 2061
+      },
+      {
+        "layer": "conv2",
+        "samples": 5,
+        "element_count": 5120,
+        "max_abs_error": 0.09590983000000008,
+        "mean_abs_error": 0.015909848796409963,
+        "mismatch": 5118
+      },
+      {
+        "layer": "relu2",
+        "samples": 5,
+        "element_count": 5120,
+        "max_abs_error": 0.08786058000000008,
+        "mean_abs_error": 0.007532650801238672,
+        "mismatch": 2477
+      },
+      {
+        "layer": "pool2",
+        "samples": 5,
+        "element_count": 1280,
+        "max_abs_error": 0.07754516999999961,
+        "mean_abs_error": 0.011933925415164063,
+        "mismatch": 919
+      },
+      {
+        "layer": "flatten",
+        "samples": 5,
+        "element_count": 1280,
+        "max_abs_error": 0.07754516999999961,
+        "mean_abs_error": 0.011933925415164063,
+        "mismatch": 919
+      },
+      {
+        "layer": "fc1",
+        "samples": 5,
+        "element_count": 600,
+        "max_abs_error": 0.10106746000000011,
+        "mean_abs_error": 0.02337255050633332,
+        "mismatch": 600
+      },
+      {
+        "layer": "relu3",
+        "samples": 5,
+        "element_count": 600,
+        "max_abs_error": 0.10106746000000011,
+        "mean_abs_error": 0.012792682970666661,
+        "mismatch": 313
+      },
+      {
+        "layer": "fc2",
+        "samples": 5,
+        "element_count": 420,
+        "max_abs_error": 0.11418880000000087,
+        "mean_abs_error": 0.02922255550285714,
+        "mismatch": 419
+      },
+      {
+        "layer": "relu4",
+        "samples": 5,
+        "element_count": 420,
+        "max_abs_error": 0.11418880000000087,
+        "mean_abs_error": 0.01776802281404761,
+        "mismatch": 238
+      },
+      {
+        "layer": "logits",
+        "samples": 5,
+        "element_count": 50,
+        "max_abs_error": 0.13090850000000032,
+        "mean_abs_error": 0.05011233698000004,
+        "mismatch": 50
+      }
+    ]
+  },
+  "per_sample": {
+    "float": [
+      {
+        "layer": "input",
+        "sample_index": 0,
+        "element_count": 784,
+        "max_abs_error": 4.880981174792964e-10,
+        "mean_abs_error": 4.080268317008336e-11,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 1,
+        "element_count": 784,
+        "max_abs_error": 4.997940117323907e-10,
+        "mean_abs_error": 4.397182837074226e-11,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 2,
+        "element_count": 784,
+        "max_abs_error": 4.997940117323907e-10,
+        "mean_abs_error": 2.071067466077753e-11,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 3,
+        "element_count": 784,
+        "max_abs_error": 4.997940117323907e-10,
+        "mean_abs_error": 7.354182272103114e-11,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 4,
+        "element_count": 784,
+        "max_abs_error": 4.997940117323907e-10,
+        "mean_abs_error": 3.038523370165509e-11,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/input.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 0,
+        "element_count": 3456,
+        "max_abs_error": 3.541601563128438e-07,
+        "mean_abs_error": 1.0223718844485648e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 1,
+        "element_count": 3456,
+        "max_abs_error": 4.780590820985253e-07,
+        "mean_abs_error": 1.9098035127783127e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 2,
+        "element_count": 3456,
+        "max_abs_error": 2.425268554873128e-07,
+        "mean_abs_error": 6.1236836412427224e-09,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 3,
+        "element_count": 3456,
+        "max_abs_error": 4.814550780274374e-07,
+        "mean_abs_error": 2.193411173974952e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 4,
+        "element_count": 3456,
+        "max_abs_error": 3.612081909132314e-07,
+        "mean_abs_error": 1.2624036205960921e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/conv1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 0,
+        "element_count": 3456,
+        "max_abs_error": 3.541601563128438e-07,
+        "mean_abs_error": 7.307329964940216e-09,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 1,
+        "element_count": 3456,
+        "max_abs_error": 4.780590820985253e-07,
+        "mean_abs_error": 1.4664288968994244e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 2,
+        "element_count": 3456,
+        "max_abs_error": 2.425268554873128e-07,
+        "mean_abs_error": 4.176111569004959e-09,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 3,
+        "element_count": 3456,
+        "max_abs_error": 4.814550780274374e-07,
+        "mean_abs_error": 1.618007712058793e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 4,
+        "element_count": 3456,
+        "max_abs_error": 3.612081909132314e-07,
+        "mean_abs_error": 9.033359184313417e-09,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 0,
+        "element_count": 864,
+        "max_abs_error": 2.432696533105627e-07,
+        "mean_abs_error": 1.0053394590310935e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 1,
+        "element_count": 864,
+        "max_abs_error": 4.780590820985253e-07,
+        "mean_abs_error": 2.158160600020522e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 2,
+        "element_count": 864,
+        "max_abs_error": 2.3986694319688695e-07,
+        "mean_abs_error": 6.381539269360903e-09,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 3,
+        "element_count": 864,
+        "max_abs_error": 4.76656494274863e-07,
+        "mean_abs_error": 2.1206154375893665e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 4,
+        "element_count": 864,
+        "max_abs_error": 3.612081909132314e-07,
+        "mean_abs_error": 1.3108954659782463e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/pool1.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 0,
+        "element_count": 1024,
+        "max_abs_error": 2.385445556640775e-06,
+        "mean_abs_error": 2.912889808329124e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 1,
+        "element_count": 1024,
+        "max_abs_error": 3.0983673093842867e-06,
+        "mean_abs_error": 3.619086487277016e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 2,
+        "element_count": 1024,
+        "max_abs_error": 1.912034911732974e-06,
+        "mean_abs_error": 1.5733232831044014e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 3,
+        "element_count": 1024,
+        "max_abs_error": 3.847631836251253e-06,
+        "mean_abs_error": 4.367479900480922e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 4,
+        "element_count": 1024,
+        "max_abs_error": 2.382042236348525e-06,
+        "mean_abs_error": 2.84009182745479e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/conv2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 0,
+        "element_count": 1024,
+        "max_abs_error": 2.3826843262853004e-06,
+        "mean_abs_error": 1.172698491020081e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 1,
+        "element_count": 1024,
+        "max_abs_error": 2.864505614930124e-06,
+        "mean_abs_error": 1.7165523929003375e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 2,
+        "element_count": 1024,
+        "max_abs_error": 1.43030151367185e-06,
+        "mean_abs_error": 8.239060100382525e-08,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 3,
+        "element_count": 1024,
+        "max_abs_error": 2.621938476554675e-06,
+        "mean_abs_error": 2.1579909803987177e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 4,
+        "element_count": 1024,
+        "max_abs_error": 2.144514160029587e-06,
+        "mean_abs_error": 1.4960484194466652e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 0,
+        "element_count": 256,
+        "max_abs_error": 2.3826843262853004e-06,
+        "mean_abs_error": 1.9382795241921642e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 1,
+        "element_count": 256,
+        "max_abs_error": 2.864505614930124e-06,
+        "mean_abs_error": 2.8995952216958796e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 2,
+        "element_count": 256,
+        "max_abs_error": 1.43030151367185e-06,
+        "mean_abs_error": 1.3326508660159312e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 3,
+        "element_count": 256,
+        "max_abs_error": 2.621938476554675e-06,
+        "mean_abs_error": 3.2417249016911283e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 4,
+        "element_count": 256,
+        "max_abs_error": 2.144514160029587e-06,
+        "mean_abs_error": 2.4530362835700664e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/pool2.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 0,
+        "element_count": 256,
+        "max_abs_error": 2.3826843262853004e-06,
+        "mean_abs_error": 1.9382795241921642e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 1,
+        "element_count": 256,
+        "max_abs_error": 2.864505614930124e-06,
+        "mean_abs_error": 2.8995952216958796e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 2,
+        "element_count": 256,
+        "max_abs_error": 1.43030151367185e-06,
+        "mean_abs_error": 1.3326508660159312e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 3,
+        "element_count": 256,
+        "max_abs_error": 2.621938476554675e-06,
+        "mean_abs_error": 3.2417249016911283e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 4,
+        "element_count": 256,
+        "max_abs_error": 2.144514160029587e-06,
+        "mean_abs_error": 2.4530362835700664e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/flatten.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 0,
+        "element_count": 120,
+        "max_abs_error": 2.1773937985969383e-06,
+        "mean_abs_error": 5.736363869067799e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 1,
+        "element_count": 120,
+        "max_abs_error": 3.180804442948215e-06,
+        "mean_abs_error": 7.669836600183594e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 2,
+        "element_count": 120,
+        "max_abs_error": 3.3705920410298518e-06,
+        "mean_abs_error": 5.450932561648867e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 3,
+        "element_count": 120,
+        "max_abs_error": 5.106075439798019e-06,
+        "mean_abs_error": 9.33616504852792e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 4,
+        "element_count": 120,
+        "max_abs_error": 2.5986987299830844e-06,
+        "mean_abs_error": 7.313926390940343e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/fc1.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 0,
+        "element_count": 120,
+        "max_abs_error": 2.1773937985969383e-06,
+        "mean_abs_error": 3.377320830880969e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 1,
+        "element_count": 120,
+        "max_abs_error": 3.180804442948215e-06,
+        "mean_abs_error": 4.4017457410744483e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 2,
+        "element_count": 120,
+        "max_abs_error": 3.3705920410298518e-06,
+        "mean_abs_error": 2.8775568867318394e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 3,
+        "element_count": 120,
+        "max_abs_error": 5.106075439798019e-06,
+        "mean_abs_error": 4.1449028352370334e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 4,
+        "element_count": 120,
+        "max_abs_error": 2.5986987299830844e-06,
+        "mean_abs_error": 3.797502201037528e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu3.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 0,
+        "element_count": 84,
+        "max_abs_error": 3.823732910746003e-06,
+        "mean_abs_error": 8.202121575477342e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 1,
+        "element_count": 84,
+        "max_abs_error": 3.4238232426986315e-06,
+        "mean_abs_error": 9.401398227845031e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 2,
+        "element_count": 84,
+        "max_abs_error": 2.030288086096732e-06,
+        "mean_abs_error": 6.03838727569911e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 3,
+        "element_count": 84,
+        "max_abs_error": 2.3443395997801986e-06,
+        "mean_abs_error": 8.129353138097045e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 4,
+        "element_count": 84,
+        "max_abs_error": 2.18020019548959e-06,
+        "mean_abs_error": 7.430513142590327e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/fc2.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 0,
+        "element_count": 84,
+        "max_abs_error": 3.823732910746003e-06,
+        "mean_abs_error": 4.888261368816652e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 1,
+        "element_count": 84,
+        "max_abs_error": 3.4238232426986315e-06,
+        "mean_abs_error": 6.242534786401889e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 2,
+        "element_count": 84,
+        "max_abs_error": 2.030288086096732e-06,
+        "mean_abs_error": 3.9117478939712513e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 3,
+        "element_count": 84,
+        "max_abs_error": 2.3443395997801986e-06,
+        "mean_abs_error": 4.782237521575292e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 4,
+        "element_count": 84,
+        "max_abs_error": 2.18020019548959e-06,
+        "mean_abs_error": 4.626320063269177e-07,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu4.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 0,
+        "element_count": 10,
+        "max_abs_error": 2.554424438638847e-06,
+        "mean_abs_error": 1.1758907467740443e-06,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00000/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 1,
+        "element_count": 10,
+        "max_abs_error": 3.206750488260468e-06,
+        "mean_abs_error": 1.5400522461739286e-06,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00001/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 2,
+        "element_count": 10,
+        "max_abs_error": 2.393892822638577e-06,
+        "mean_abs_error": 1.1648794647767247e-06,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00002/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 3,
+        "element_count": 10,
+        "max_abs_error": 3.5786010741389873e-06,
+        "mean_abs_error": 1.4912338378164636e-06,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00003/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 4,
+        "element_count": 10,
+        "max_abs_error": 3.193439941373555e-06,
+        "mean_abs_error": 1.5050228269641863e-06,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/float/sample_00004/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/logits.txt"
+      }
+    ],
+    "raw": [
+      {
+        "layer": "input",
+        "sample_index": 0,
+        "element_count": 784,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00000/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 1,
+        "element_count": 784,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00001/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 2,
+        "element_count": 784,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00002/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 3,
+        "element_count": 784,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00003/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 4,
+        "element_count": 784,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00004/input.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 0,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00000/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 1,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00001/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 2,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00002/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 3,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00003/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 4,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00004/conv1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 0,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 1,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 2,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 3,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 4,
+        "element_count": 3456,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/relu1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 0,
+        "element_count": 864,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00000/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 1,
+        "element_count": 864,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00001/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 2,
+        "element_count": 864,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00002/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 3,
+        "element_count": 864,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00003/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 4,
+        "element_count": 864,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00004/pool1.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 0,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00000/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 1,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00001/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 2,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00002/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 3,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00003/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 4,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m3/reference_fixed_raw/sample_00004/conv2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 0,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 1,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 2,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 3,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 4,
+        "element_count": 1024,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/relu2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 0,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 1,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 2,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 3,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 4,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/pool2.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 0,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 1,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 2,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 3,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 4,
+        "element_count": 256,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/flatten.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 0,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 1,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 2,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 3,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 4,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/fc1.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 0,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 1,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 2,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 3,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 4,
+        "element_count": 120,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/relu3.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 0,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 1,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 2,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 3,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 4,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/fc2.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 0,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 1,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 2,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 3,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 4,
+        "element_count": 84,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/relu4.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 0,
+        "element_count": 10,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00000/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 1,
+        "element_count": 10,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00001/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 2,
+        "element_count": 10,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00002/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 3,
+        "element_count": 10,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00003/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 4,
+        "element_count": 10,
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "mismatch": 0,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_fixed_raw/sample_00004/logits.txt"
+      }
+    ],
+    "quant": [
+      {
+        "layer": "input",
+        "sample_index": 0,
+        "element_count": 784,
+        "max_abs_error": 0.015563726,
+        "mean_abs_error": 0.0011312336727806124,
+        "mismatch": 115,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 1,
+        "element_count": 784,
+        "max_abs_error": 0.015563726,
+        "mean_abs_error": 0.0016822351945153021,
+        "mismatch": 163,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 2,
+        "element_count": 784,
+        "max_abs_error": 0.015563726,
+        "mean_abs_error": 0.0005327128426020405,
+        "mismatch": 63,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 3,
+        "element_count": 784,
+        "max_abs_error": 0.015563726,
+        "mean_abs_error": 0.002541954253826528,
+        "mismatch": 190,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/input.txt"
+      },
+      {
+        "layer": "input",
+        "sample_index": 4,
+        "element_count": 784,
+        "max_abs_error": 0.015563726,
+        "mean_abs_error": 0.0013644520168367357,
+        "mismatch": 119,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/input.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/input.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 0,
+        "element_count": 3456,
+        "max_abs_error": 0.034738242999999946,
+        "mean_abs_error": 0.004202457198326187,
+        "mismatch": 1668,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 1,
+        "element_count": 3456,
+        "max_abs_error": 0.04339683000000005,
+        "mean_abs_error": 0.005984668084074363,
+        "mismatch": 2123,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 2,
+        "element_count": 3456,
+        "max_abs_error": 0.027559339999999988,
+        "mean_abs_error": 0.0028893928715309604,
+        "mismatch": 1175,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 3,
+        "element_count": 3456,
+        "max_abs_error": 0.05824172000000005,
+        "mean_abs_error": 0.007111423154776332,
+        "mismatch": 2387,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/conv1.txt"
+      },
+      {
+        "layer": "conv1",
+        "sample_index": 4,
+        "element_count": 3456,
+        "max_abs_error": 0.03994476999999996,
+        "mean_abs_error": 0.005429006727011459,
+        "mismatch": 1985,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/conv1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/conv1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 0,
+        "element_count": 3456,
+        "max_abs_error": 0.030893559999999987,
+        "mean_abs_error": 0.0026980210582301213,
+        "mismatch": 1086,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 1,
+        "element_count": 3456,
+        "max_abs_error": 0.04339683000000005,
+        "mean_abs_error": 0.004116644418732639,
+        "mismatch": 1445,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 2,
+        "element_count": 3456,
+        "max_abs_error": 0.02536833000000005,
+        "mean_abs_error": 0.0017217284865752311,
+        "mismatch": 709,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 3,
+        "element_count": 3456,
+        "max_abs_error": 0.0496029899999999,
+        "mean_abs_error": 0.004765104495800059,
+        "mismatch": 1602,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu1.txt"
+      },
+      {
+        "layer": "relu1",
+        "sample_index": 4,
+        "element_count": 3456,
+        "max_abs_error": 0.0357216600000001,
+        "mean_abs_error": 0.0035550155092561046,
+        "mismatch": 1269,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 0,
+        "element_count": 864,
+        "max_abs_error": 0.027699648999999993,
+        "mean_abs_error": 0.0036309665467989583,
+        "mismatch": 365,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 1,
+        "element_count": 864,
+        "max_abs_error": 0.03847395999999992,
+        "mean_abs_error": 0.005523597151337962,
+        "mismatch": 479,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 2,
+        "element_count": 864,
+        "max_abs_error": 0.02536833000000005,
+        "mean_abs_error": 0.0023515030523182856,
+        "mismatch": 249,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 3,
+        "element_count": 864,
+        "max_abs_error": 0.041616680000000184,
+        "mean_abs_error": 0.006291680761484954,
+        "mismatch": 524,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/pool1.txt"
+      },
+      {
+        "layer": "pool1",
+        "sample_index": 4,
+        "element_count": 864,
+        "max_abs_error": 0.034368767999999994,
+        "mean_abs_error": 0.004928597713606249,
+        "mismatch": 444,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/pool1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/pool1.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 0,
+        "element_count": 1024,
+        "max_abs_error": 0.0653359899999999,
+        "mean_abs_error": 0.014400016319453125,
+        "mismatch": 1023,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00000/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 1,
+        "element_count": 1024,
+        "max_abs_error": 0.08155059999999992,
+        "mean_abs_error": 0.015716228378818364,
+        "mismatch": 1024,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00001/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 2,
+        "element_count": 1024,
+        "max_abs_error": 0.06591272000000004,
+        "mean_abs_error": 0.012189906284391603,
+        "mismatch": 1023,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00002/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 3,
+        "element_count": 1024,
+        "max_abs_error": 0.0905551899999999,
+        "mean_abs_error": 0.018713326159166987,
+        "mismatch": 1024,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00003/conv2.txt"
+      },
+      {
+        "layer": "conv2",
+        "sample_index": 4,
+        "element_count": 1024,
+        "max_abs_error": 0.09590983000000008,
+        "mean_abs_error": 0.01852976684021973,
+        "mismatch": 1024,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/conv2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m2/reference_float/sample_00004/conv2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 0,
+        "element_count": 1024,
+        "max_abs_error": 0.0653359899999999,
+        "mean_abs_error": 0.005948222238242188,
+        "mismatch": 424,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 1,
+        "element_count": 1024,
+        "max_abs_error": 0.06945561999999983,
+        "mean_abs_error": 0.007496676474121094,
+        "mismatch": 487,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 2,
+        "element_count": 1024,
+        "max_abs_error": 0.05293905999999993,
+        "mean_abs_error": 0.005929201239088869,
+        "mismatch": 488,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 3,
+        "element_count": 1024,
+        "max_abs_error": 0.07754516999999961,
+        "mean_abs_error": 0.009084759797211914,
+        "mismatch": 546,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu2.txt"
+      },
+      {
+        "layer": "relu2",
+        "sample_index": 4,
+        "element_count": 1024,
+        "max_abs_error": 0.08786058000000008,
+        "mean_abs_error": 0.009204394257529298,
+        "mismatch": 532,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 0,
+        "element_count": 256,
+        "max_abs_error": 0.0653359899999999,
+        "mean_abs_error": 0.009779389303164063,
+        "mismatch": 168,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 1,
+        "element_count": 256,
+        "max_abs_error": 0.06945561999999983,
+        "mean_abs_error": 0.011180363971484378,
+        "mismatch": 185,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 2,
+        "element_count": 256,
+        "max_abs_error": 0.05293905999999993,
+        "mean_abs_error": 0.009364687462929688,
+        "mismatch": 172,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 3,
+        "element_count": 256,
+        "max_abs_error": 0.07754516999999961,
+        "mean_abs_error": 0.014429707490234367,
+        "mismatch": 199,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/pool2.txt"
+      },
+      {
+        "layer": "pool2",
+        "sample_index": 4,
+        "element_count": 256,
+        "max_abs_error": 0.07111548999999995,
+        "mean_abs_error": 0.014915478848007814,
+        "mismatch": 195,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/pool2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/pool2.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 0,
+        "element_count": 256,
+        "max_abs_error": 0.0653359899999999,
+        "mean_abs_error": 0.009779389303164063,
+        "mismatch": 168,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 1,
+        "element_count": 256,
+        "max_abs_error": 0.06945561999999983,
+        "mean_abs_error": 0.011180363971484378,
+        "mismatch": 185,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 2,
+        "element_count": 256,
+        "max_abs_error": 0.05293905999999993,
+        "mean_abs_error": 0.009364687462929688,
+        "mismatch": 172,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 3,
+        "element_count": 256,
+        "max_abs_error": 0.07754516999999961,
+        "mean_abs_error": 0.014429707490234367,
+        "mismatch": 199,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/flatten.txt"
+      },
+      {
+        "layer": "flatten",
+        "sample_index": 4,
+        "element_count": 256,
+        "max_abs_error": 0.07111548999999995,
+        "mean_abs_error": 0.014915478848007814,
+        "mismatch": 195,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/flatten.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/flatten.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 0,
+        "element_count": 120,
+        "max_abs_error": 0.06543278000000008,
+        "mean_abs_error": 0.019871143703333313,
+        "mismatch": 120,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 1,
+        "element_count": 120,
+        "max_abs_error": 0.08071690000000054,
+        "mean_abs_error": 0.02461898895333335,
+        "mismatch": 120,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 2,
+        "element_count": 120,
+        "max_abs_error": 0.058124840000000066,
+        "mean_abs_error": 0.017115582129166633,
+        "mismatch": 120,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 3,
+        "element_count": 120,
+        "max_abs_error": 0.07491169999999947,
+        "mean_abs_error": 0.02802310950416664,
+        "mismatch": 120,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/fc1.txt"
+      },
+      {
+        "layer": "fc1",
+        "sample_index": 4,
+        "element_count": 120,
+        "max_abs_error": 0.10106746000000011,
+        "mean_abs_error": 0.027233928241666667,
+        "mismatch": 120,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/fc1.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/fc1.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 0,
+        "element_count": 120,
+        "max_abs_error": 0.06543278000000008,
+        "mean_abs_error": 0.012153745344999991,
+        "mismatch": 60,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 1,
+        "element_count": 120,
+        "max_abs_error": 0.05703212000000013,
+        "mean_abs_error": 0.013485295778333344,
+        "mismatch": 64,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 2,
+        "element_count": 120,
+        "max_abs_error": 0.04479553000000003,
+        "mean_abs_error": 0.01043460726666665,
+        "mismatch": 69,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 3,
+        "element_count": 120,
+        "max_abs_error": 0.07092775000000007,
+        "mean_abs_error": 0.014293923621666652,
+        "mismatch": 61,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu3.txt"
+      },
+      {
+        "layer": "relu3",
+        "sample_index": 4,
+        "element_count": 120,
+        "max_abs_error": 0.10106746000000011,
+        "mean_abs_error": 0.013595842841666669,
+        "mismatch": 59,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu3.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu3.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 0,
+        "element_count": 84,
+        "max_abs_error": 0.11418880000000087,
+        "mean_abs_error": 0.030030595697619063,
+        "mismatch": 84,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 1,
+        "element_count": 84,
+        "max_abs_error": 0.10521299999999911,
+        "mean_abs_error": 0.03098237988809522,
+        "mismatch": 84,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 2,
+        "element_count": 84,
+        "max_abs_error": 0.06623682000000009,
+        "mean_abs_error": 0.022528136874999993,
+        "mismatch": 83,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 3,
+        "element_count": 84,
+        "max_abs_error": 0.11065778000000037,
+        "mean_abs_error": 0.030213596773809533,
+        "mismatch": 84,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/fc2.txt"
+      },
+      {
+        "layer": "fc2",
+        "sample_index": 4,
+        "element_count": 84,
+        "max_abs_error": 0.1021437300000001,
+        "mean_abs_error": 0.03235806827976188,
+        "mismatch": 84,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/fc2.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/fc2.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 0,
+        "element_count": 84,
+        "max_abs_error": 0.11418880000000087,
+        "mean_abs_error": 0.018065163173809542,
+        "mismatch": 47,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 1,
+        "element_count": 84,
+        "max_abs_error": 0.10521299999999911,
+        "mean_abs_error": 0.01941112932142854,
+        "mismatch": 46,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 2,
+        "element_count": 84,
+        "max_abs_error": 0.06623682000000009,
+        "mean_abs_error": 0.013827562551190458,
+        "mismatch": 50,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 3,
+        "element_count": 84,
+        "max_abs_error": 0.11065778000000037,
+        "mean_abs_error": 0.01753344941666667,
+        "mismatch": 45,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/relu4.txt"
+      },
+      {
+        "layer": "relu4",
+        "sample_index": 4,
+        "element_count": 84,
+        "max_abs_error": 0.09527864000000008,
+        "mean_abs_error": 0.020002809607142846,
+        "mismatch": 50,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/relu4.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/relu4.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 0,
+        "element_count": 10,
+        "max_abs_error": 0.10484719999999825,
+        "mean_abs_error": 0.048066800999999916,
+        "mismatch": 10,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00000/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00000/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 1,
+        "element_count": 10,
+        "max_abs_error": 0.11044039999999988,
+        "mean_abs_error": 0.04607683100000006,
+        "mismatch": 10,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00001/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00001/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 2,
+        "element_count": 10,
+        "max_abs_error": 0.08136520000000003,
+        "mean_abs_error": 0.03995659559999998,
+        "mismatch": 10,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00002/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00002/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 3,
+        "element_count": 10,
+        "max_abs_error": 0.10159230000000008,
+        "mean_abs_error": 0.05890927930000014,
+        "mismatch": 10,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00003/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00003/logits.txt"
+      },
+      {
+        "layer": "logits",
+        "sample_index": 4,
+        "element_count": 10,
+        "max_abs_error": 0.13090850000000032,
+        "mean_abs_error": 0.0575521780000001,
+        "mismatch": 10,
+        "dump_source": "provided_by_member7/member7/results/layerwise/fixed/sample_00004/logits.txt",
+        "reference_source": "provided_by_member7/member6-handoff-v1/m5/data/reference_float/sample_00004/logits.txt"
+      }
+    ]
+  },
+  "classification": [
+    {
+      "sample_id": "sample_00000",
+      "label": 7,
+      "float_prediction": 7,
+      "fixed_prediction": 7,
+      "float_logits": [
+        -5.661493301391602,
+        -4.4324727058410645,
+        -2.009275436401367,
+        3.2903175354003906,
+        -6.686838150024414,
+        -5.916149616241455,
+        -18.363903045654297,
+        12.324501991271973,
+        -3.2389442920684814,
+        2.6393773555755615
+      ],
+      "fixed_raw_logits": [
+        -182,
+        -140,
+        -63,
+        104,
+        -217,
+        -189,
+        -591,
+        396,
+        -105,
+        84
+      ],
+      "input_link_to_member1_verified": true
+    },
+    {
+      "sample_id": "sample_00001",
+      "label": 2,
+      "float_prediction": 2,
+      "fixed_prediction": 2,
+      "float_logits": [
+        2.2051517963409424,
+        2.260899305343628,
+        15.49953842163086,
+        -6.305809497833252,
+        -11.366908073425293,
+        -10.931048393249512,
+        -3.0641355514526367,
+        -6.561450481414795,
+        2.6808061599731445,
+        -13.983307838439941
+      ],
+      "fixed_raw_logits": [
+        69,
+        73,
+        498,
+        -204,
+        -364,
+        -350,
+        -97,
+        -212,
+        87,
+        -451
+      ],
+      "input_link_to_member1_verified": true
+    },
+    {
+      "sample_id": "sample_00002",
+      "label": 1,
+      "float_prediction": 1,
+      "fixed_prediction": 1,
+      "float_logits": [
+        -3.423130512237549,
+        9.447761535644531,
+        -3.8026864528656006,
+        -7.710267066955566,
+        1.8248858451843262,
+        -4.507944583892822,
+        -5.003683090209961,
+        -0.8705734610557556,
+        -2.408548355102539,
+        -5.515889644622803
+      ],
+      "fixed_raw_logits": [
+        -111,
+        302,
+        -123,
+        -246,
+        61,
+        -146,
+        -162,
+        -28,
+        -76,
+        -175
+      ],
+      "input_link_to_member1_verified": true
+    },
+    {
+      "sample_id": "sample_00003",
+      "label": 0,
+      "float_prediction": 0,
+      "fixed_prediction": 0,
+      "float_logits": [
+        11.851595878601074,
+        -10.385488510131836,
+        0.22473305463790894,
+        -4.558712005615234,
+        -8.676311492919922,
+        -2.7755584716796875,
+        0.5631609559059143,
+        -6.37885856628418,
+        -2.1266791820526123,
+        -4.3202972412109375
+      ],
+      "fixed_raw_logits": [
+        376,
+        -334,
+        6,
+        -144,
+        -275,
+        -88,
+        19,
+        -202,
+        -66,
+        -136
+      ],
+      "input_link_to_member1_verified": true
+    },
+    {
+      "sample_id": "sample_00004",
+      "label": 4,
+      "float_prediction": 4,
+      "fixed_prediction": 4,
+      "float_logits": [
+        -5.189509868621826,
+        -3.9638986587524414,
+        -2.9582302570343018,
+        -6.494701385498047,
+        11.734720230102539,
+        -3.8613855838775635,
+        -5.931588649749756,
+        -2.4813547134399414,
+        -4.620445728302002,
+        1.4009532928466797
+      ],
+      "fixed_raw_logits": [
+        -169,
+        -129,
+        -94,
+        -205,
+        377,
+        -124,
+        -194,
+        -78,
+        -148,
+        47
+      ],
+      "input_link_to_member1_verified": true
+    }
+  ]
+}

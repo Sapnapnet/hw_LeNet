@@ -1,0 +1,16 @@
+{
+  "version": "level2_340_20260915",
+  "date": "2026-09-15",
+  "status": "inputs_approved_for_testing",
+  "sample_count": 340,
+  "per_class_count": 34,
+  "pgm_files": 680,
+  "fixed_files": 680,
+  "policy": "2026-09-15用户确认本轮全部340条保留测试；重复及图像质量问题视为采集固有情况，不去重、不替换、不修图、不筛除。总体分母340，每类分母34。",
+  "manifest_sha256": "393d3031bde5ec56fb7df1f4af954a07503fdf120c2cac831fe59ac9f2336e93",
+  "label_sha256": "1df137325eeec31cc45336f6427a065affa6d23441e285ff27202825e68dae89",
+  "source_manifest_sha256": "b90ab6bedec8511f97868b7bbc0d54e27206f2f7ee3fe8e1296e428e08979f94",
+  "pipeline_sha256": "f934d340129aef372553e141e809442751b98c585e6b70cac06da4706d578899",
+  "inference_executed": false,
+  "sent_to_member7": false
+}

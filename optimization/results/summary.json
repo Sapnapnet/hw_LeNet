@@ -1,0 +1,308 @@
+{
+  "part": "xc7z020clg400-1",
+  "clock_ns": 10,
+  "variants": {
+    "baseline": {
+      "hls_synthesis": {
+        "variant": "baseline",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/baseline/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "3322732a98aa9e251b8f4153329c32a894ac2c9e1e511b2bc3ebb346630a91ce",
+        "Best-caseLatency": "30",
+        "Worst-caseLatency": "474826",
+        "Interval-min": "31",
+        "Interval-max": "474827",
+        "EstimatedClockPeriod": "8.702",
+        "DSP48E": "146",
+        "BRAM_18K": "14",
+        "LUT": "17279",
+        "FF": "33932"
+      },
+      "cosim": {
+        "report": "optimization/build/baseline/solution1/sim/report/lenet_accelerator_with_weights_cosim.rpt",
+        "text": "Report time       : Sun Sep 13 14:23:55     2026.\nSolution          : solution1.\nSimulation tool   : xsim.\n\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|          |          |                    Latency                    |                    Interval                   |\n+   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+\n|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|\n|   Verilog|      Pass|          64815|          64815|          64815|          64816|          64816|          64816|\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n"
+      },
+      "accuracy_runs": [
+        {
+          "file": "optimization/results/baseline/cosim_3.csv",
+          "sha256": "5a39be56650629ca26d41762c2677eaaaf025ffff7fc2442ae06c708c28f8917",
+          "samples": 3,
+          "declared_samples": 3,
+          "complete": true,
+          "correct": 3,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 0,
+          "prediction_mismatches_vs_python": 0
+        }
+      ],
+      "power": {
+        "source": "optimization/results/baseline/power/activity_power.rpt",
+        "sha256": "926803897b1745f9354e95a2b91ae260f08c02e3b532c538d205e052f4cd2236",
+        "Total On-Chip Power (W)": "0.177",
+        "Dynamic (W)": "0.073",
+        "Device Static (W)": "0.104",
+        "Confidence Level": "High",
+        "Design Nets Matched": "54%   (25824/47540)"
+      }
+    },
+    "straight": {
+      "hls_synthesis": {
+        "variant": "straight",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/straight/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "14c97d72de35f24477554d58ff2014d1dde4839a9be305e7da2b7a90ec7ff41b",
+        "Best-caseLatency": "64809",
+        "Worst-caseLatency": "64809",
+        "Interval-min": "64810",
+        "Interval-max": "64810",
+        "EstimatedClockPeriod": "8.702",
+        "DSP48E": "146",
+        "BRAM_18K": "14",
+        "LUT": "16776",
+        "FF": "33919"
+      },
+      "accuracy_runs": []
+    },
+    "noflatten": {
+      "hls_synthesis": {
+        "variant": "noflatten",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/noflatten/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "9b868a06f4f7a30cd7a5860dee6a2836f4f29e0edfb85b9fabf74359b0f550c6",
+        "Best-caseLatency": "64551",
+        "Worst-caseLatency": "64551",
+        "Interval-min": "64552",
+        "Interval-max": "64552",
+        "EstimatedClockPeriod": "8.702",
+        "DSP48E": "146",
+        "BRAM_18K": "13",
+        "LUT": "16697",
+        "FF": "33896"
+      },
+      "accuracy_runs": [
+        {
+          "file": "optimization/results/noflatten/csim_5.csv",
+          "sha256": "f63c4192a4de5e44fe68529a93035e3bebc0bd5b88f55c700420b5d91a12040d",
+          "samples": 5,
+          "declared_samples": 5,
+          "complete": true,
+          "correct": 5,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 0,
+          "prediction_mismatches_vs_python": 0
+        }
+      ]
+    },
+    "optimized": {
+      "hls_synthesis": {
+        "variant": "optimized",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/optimized/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "893f9b88ef70d9b3836260dbe995b100245dc050bee4c561ef4a99b59128b6d7",
+        "Best-caseLatency": "18428",
+        "Worst-caseLatency": "18428",
+        "Interval-min": "18429",
+        "Interval-max": "18429",
+        "EstimatedClockPeriod": "8.727",
+        "DSP48E": "201",
+        "BRAM_18K": "25",
+        "LUT": "16411",
+        "FF": "35306"
+      },
+      "cosim": {
+        "report": "optimization/build/optimized/solution1/sim/report/lenet_accelerator_with_weights_cosim.rpt",
+        "text": "Report time       : Sun Sep 13 22:56:49     2026.\nSolution          : solution1.\nSimulation tool   : xsim.\n\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|          |          |                    Latency                    |                    Interval                   |\n+   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+\n|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|\n|   Verilog|      Pass|          18428|          18428|          18428|          18429|          18429|          18429|\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n"
+      },
+      "accuracy_runs": [
+        {
+          "file": "optimization/results/optimized/cosim_3.csv",
+          "sha256": "5a39be56650629ca26d41762c2677eaaaf025ffff7fc2442ae06c708c28f8917",
+          "samples": 3,
+          "declared_samples": 3,
+          "complete": true,
+          "correct": 3,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 0,
+          "prediction_mismatches_vs_python": 0
+        },
+        {
+          "file": "optimization/results/optimized/csim_10000.csv",
+          "sha256": "9f7db59318f4fbada5ed511f4e69c0b5730b311ade737cf766b6c5987a2b8e9c",
+          "samples": 10000,
+          "declared_samples": 10000,
+          "complete": true,
+          "correct": 9894,
+          "accuracy": 0.9894,
+          "raw_logit_mismatches_vs_python": 0,
+          "prediction_mismatches_vs_python": 0
+        }
+      ],
+      "power": {
+        "source": "optimization/results/optimized/power/activity_power.rpt",
+        "sha256": "fc667817a032e27a419b55ff4e7bd44b1ddfb5e73817a1026f6f18855ebad380",
+        "Total On-Chip Power (W)": "0.164",
+        "Dynamic (W)": "0.060",
+        "Device Static (W)": "0.104",
+        "Confidence Level": "High",
+        "Design Nets Matched": "69%   (30149/43416)"
+      }
+    },
+    "fc24b": {
+      "hls_synthesis": {
+        "variant": "fc24b",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/fc24b/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "fb639ea0ecc5f11ef4c3cb778917f8e22e53d11ce0c0c850bafe96c6ad88cf07",
+        "Best-caseLatency": "15798",
+        "Worst-caseLatency": "15798",
+        "Interval-min": "15799",
+        "Interval-max": "15799",
+        "EstimatedClockPeriod": "8.727",
+        "DSP48E": "217",
+        "BRAM_18K": "25",
+        "LUT": "16856",
+        "FF": "37613"
+      },
+      "cosim": {
+        "report": "optimization/build/fc24b/solution1/sim/report/lenet_accelerator_with_weights_cosim.rpt",
+        "text": "Report time       : Sun Sep 13 18:51:11     2026.\nSolution          : solution1.\nSimulation tool   : xsim.\n\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|          |          |                    Latency                    |                    Interval                   |\n+   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+\n|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|\n|   Verilog|      Pass|          15798|          15798|          15798|          15799|          15799|          15799|\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n"
+      },
+      "accuracy_runs": [
+        {
+          "file": "optimization/results/fc24b/cosim_3.csv",
+          "sha256": "5a39be56650629ca26d41762c2677eaaaf025ffff7fc2442ae06c708c28f8917",
+          "samples": 3,
+          "declared_samples": 3,
+          "complete": true,
+          "correct": 3,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 0,
+          "prediction_mismatches_vs_python": 0
+        },
+        {
+          "file": "optimization/results/fc24b/csim_3.csv",
+          "sha256": "5a39be56650629ca26d41762c2677eaaaf025ffff7fc2442ae06c708c28f8917",
+          "samples": 3,
+          "declared_samples": 3,
+          "complete": true,
+          "correct": 3,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 0,
+          "prediction_mismatches_vs_python": 0
+        }
+      ]
+    },
+    "aggressive12b": {
+      "hls_synthesis": {
+        "variant": "aggressive12b",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/aggressive12b/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "2d1d7aae0c377392c36b2afbbdb72d483ba50f5cf27de0e2adb6ff7d3c89a2a9",
+        "Best-caseLatency": "13936",
+        "Worst-caseLatency": "13936",
+        "Interval-min": "13937",
+        "Interval-max": "13937",
+        "EstimatedClockPeriod": "8.727",
+        "DSP48E": "217",
+        "BRAM_18K": "17",
+        "LUT": "13522",
+        "FF": "37451"
+      },
+      "accuracy_runs": []
+    },
+    "aggressive5b": {
+      "hls_synthesis": {
+        "variant": "aggressive5b",
+        "module": "lenet_accelerator_with_weights",
+        "source": "optimization/build/aggressive5b/solution1/syn/report/lenet_accelerator_with_weights_csynth.xml",
+        "sha256": "5104a1e033e69dd2d346f2fa05c0c6a2e3e86ccfafc60500b1a4237ce145bcd3",
+        "Best-caseLatency": "11025",
+        "Worst-caseLatency": "11025",
+        "Interval-min": "11026",
+        "Interval-max": "11026",
+        "EstimatedClockPeriod": "8.727",
+        "DSP48E": "217",
+        "BRAM_18K": "9",
+        "LUT": "13729",
+        "FF": "38694"
+      },
+      "cosim": {
+        "report": "optimization/build/aggressive5b/solution1/sim/report/lenet_accelerator_with_weights_cosim.rpt",
+        "text": "Report time       : Sun Sep 13 22:30:25     2026.\nSolution          : solution1.\nSimulation tool   : xsim.\n\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|          |          |                    Latency                    |                    Interval                   |\n+   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+\n|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|\n|   Verilog|      Pass|          11025|          11025|          11025|          11026|          11026|          11026|\n+----------+----------+-----------------------------------------------+-----------------------------------------------+\n"
+      },
+      "accuracy_runs": [
+        {
+          "file": "optimization/results/aggressive5b/cosim_3.csv",
+          "sha256": "86661b324540f1343d1648ddae062e8280045772aedcbb6c7decdd5038ea0413",
+          "samples": 3,
+          "declared_samples": 3,
+          "complete": true,
+          "correct": 3,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 30,
+          "prediction_mismatches_vs_python": 0
+        },
+        {
+          "file": "optimization/results/aggressive5b/csim_10000.csv",
+          "sha256": "d6fbd4719dda6d4c36f360224a6d2d213b7bf567d95f85aa9b56bbaafd4ae432",
+          "samples": 10000,
+          "declared_samples": 10000,
+          "complete": true,
+          "correct": 9655,
+          "accuracy": 0.9655,
+          "raw_logit_mismatches_vs_python": 99662,
+          "prediction_mismatches_vs_python": 318
+        },
+        {
+          "file": "optimization/results/aggressive5b/csim_3.csv",
+          "sha256": "86661b324540f1343d1648ddae062e8280045772aedcbb6c7decdd5038ea0413",
+          "samples": 3,
+          "declared_samples": 3,
+          "complete": true,
+          "correct": 3,
+          "accuracy": 1.0,
+          "raw_logit_mismatches_vs_python": 30,
+          "prediction_mismatches_vs_python": 0
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "config/network_config.h": "63006dfc2283b7611f1a03d81c53323e966ff437dd458af70c3547a568bbef43",
+    "config/quant_params.h": "1475ff03042a66988180a24f3d2a12bdde16edd4d358f8202ddd2f4f80d0125b",
+    "config/types.h": "645087e3ed9234e7d8991a6663f94abfadf2ab0fe16b2051a68954f0291017dd",
+    "hls/buffer/address_gen.h": "c1a6f49a8aca993ef64160cbe05e6bec882a7370963147866fafc16013878226",
+    "hls/buffer/buffer.h": "f1c0002de7fb940b29b8ef13608b6feeca67c5c32448a0a5849dc583b0eb135a",
+    "hls/conv/conv2d_gemm.h": "eccda2c700a776744a7c50c4250a5272340227c6c3be512cd1ab1b16f036e560",
+    "hls/conv/conv2d_systolic.cpp": "f6a8243b8eb7ed544dded7ecf303ead98b89f34221bee554fe309afed236060f",
+    "hls/conv/conv2d_systolic.h": "1bc379841e5f860a87734a4fc953f6a415d7fcc2f994d9ba0833c296508f8ff7",
+    "hls/conv/gemm_systolic.h": "1726035fab4b4aa508cc86686d0ac2f59512c993107e37bd712f3180173fa527",
+    "hls/operators/argmax10.h": "53c3cd6bc3bcdbcd01c42452b7333678d7a047a081e5854ebfc39f1c5b82a3f4",
+    "hls/operators/fc.h": "97b428aea1cc78133cb391a7cff235b9f86ecfbb345a599b394099d0f8692de6",
+    "hls/operators/flatten.h": "5db8d4107b57fb639ed8112755951760ed3d60bda9684a62a5ae05f8c51409d7",
+    "hls/operators/maxpool2d.h": "3ce6ba42f64f33828c87df373a5e203778916a96f5143eb7b6362c85a1d64f08",
+    "hls/operators/relu.h": "50065fc5640be6e89553ca4df0baf323602c602234580f68e7246d923a1993f1",
+    "hls/top/controller.h": "832eaafbb171ad51e1ba3688b22590a1bb18d6c9b80b3a26283e95490518ec97",
+    "hls/top/lenet_accelerator.cpp": "23ef7fcccc69490e36c78386951ba658ed399830fd091f6679d9002e56756e84",
+    "hls/top/lenet_accelerator.h": "a0effc1a158b652f99ff79df4b87af6b5f7951b613a2bbf97b58b02638f182e7",
+    "optimization/audit_results.py": "7f87d7eacade858dc29e0ff74f9e48f58d22e64cc46cc2c5807e1bf8b1f24de6",
+    "optimization/capture_activity.py": "66b61d78f4d1f69230f000f8290ba776ee1c5a719de45efa9409a6b8005f27ad",
+    "optimization/check_layout.py": "f1b86c266ffd98bbb2b732b11c471bfdaf4bee36308ef5792c69082a7a237592",
+    "optimization/check_power_inputs.py": "5fed19d51f89370f81b34b8b42185fda0f49adba3077f5e4ac27f3d06e8763f3",
+    "optimization/collect_results.py": "5eae264b73bd9dc0fadd20759afd8c881ea24611ec05dcf9d1744f636de1f4a3",
+    "optimization/eval_prune_variants.py": "d19587f6921385572eafc5cb7a8ce11a9ada7e094f47422ca0c00e27437d5ed7",
+    "optimization/fast_kernels.h": "7bafbf52e6f1f020aae9213f02bca224abfcde1e2b4872845185e6152ec2849b",
+    "optimization/lenet_fast.cpp": "4fa9c3aec69527714875136c3fe8f81457be67394ad88aa8c745efb45fcf0c3f",
+    "optimization/make_report.py": "2c34fa4db3bd98dc5541bc70815cca938f3a3e557ffbbb0bf270ee3ce6d76aa5",
+    "optimization/package_results.py": "3baf182e74ac631cb52d80d006b4e35dc6c76d582c4fb9d2ade7d36b8005581d",
+    "optimization/plot_results.py": "dccaac3348d8b85317b7f7b95f642058cbf31af2d252a417e97c633d6157969d",
+    "optimization/power_impl.tcl": "480a6591da0dd1e974224a2aef6e6cfc69bbd7518bf568c1a94e1441180bb43c",
+    "optimization/power_report.tcl": "aeaa835432dfad301a9c01731d97d8d48464f263d251e1b187c3782de50f8039",
+    "optimization/run.ps1": "64beff9faff8c73e02998a3de2438dc93ae525434cb916b4d78cd80ad2b7fdf5",
+    "optimization/run_hls.tcl": "d507db85d9333ebf0a95b2f2bb8c750336c067d1ef6b982e3c0a0305de3fcf60",
+    "optimization/experiments/banked_v2/fast_kernels.h": "76555e05852cb232c84f027ac812f83b37abdd593c6e20b63ec4bf40756ce3ac",
+    "optimization/experiments/banked_v2/lenet_fast.cpp": "ee81eda59282ab85178b131f018477404a2cda7b130b9409a14ef7cb98b2ca77",
+    "optimization/experiments/cyclic_v1/fast_kernels.h": "77949a1bd439349eea5136899d015fb0a11a3555e9da7f0e5f2f7abb9f742c10",
+    "optimization/experiments/cyclic_v1/lenet_fast.cpp": "951373550cc3776dc28434809349e2bb2e74f7e092212f594bccbaa2f08565e5"
+  }
+}

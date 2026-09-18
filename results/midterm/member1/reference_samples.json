@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-08",
+  "source": "provided_by_member1/reference/float/manifest.json",
+  "label_source": "provided_by_member1/data/MNIST/raw/t10k-labels-idx1-ubyte",
+  "scope": "Static data and supplied log comparison; no model execution",
+  "samples": [
+    {
+      "sample_id": "sample_00000",
+      "mnist_test_index": 0,
+      "ground_truth_label": 7,
+      "float_reference_prediction": 7,
+      "member6_logged_predictions": {
+        "float": 7,
+        "fixed": 7
+      },
+      "raw_idx_input_equal": true,
+      "member6_float_input_equal": true,
+      "member6_fixed_input_matches_ties_even_times_32": true,
+      "reference_tensor_count": 13,
+      "npy_txt_max_abs_differences": {
+        "input": 4.880981174792964e-10,
+        "conv1": 4.9798583034998956e-09,
+        "relu1": 4.9798583034998956e-09,
+        "pool1": 4.967041000725203e-09,
+        "conv2": 4.978027323687684e-09,
+        "relu2": 4.968261801963081e-09,
+        "pool2": 4.953613297331572e-09,
+        "flatten": 4.953613297331572e-09,
+        "fc1": 4.968261801963081e-09,
+        "relu3": 4.968261801963081e-09,
+        "fc2": 2.2229004414953124e-08,
+        "relu4": 2.2229004414953124e-08,
+        "logits": 4.565429634340035e-08
+      },
+      "new_float_vs_member6_reference_max_abs_differences": {
+        "input": 0.0,
+        "conv1": 0.0,
+        "relu1": 0.0,
+        "pool1": 0.0,
+        "conv2": 0.0,
+        "relu2": 0.0,
+        "pool2": 0.0,
+        "flatten": 0.0,
+        "fc1": 1.0000000010279564e-06,
+        "relu3": 4.499999999296733e-07,
+        "fc2": 9.399999996162478e-07,
+        "relu4": 9.399999996162478e-07,
+        "logits": 7.999999986907369e-07
+      }
+    },
+    {
+      "sample_id": "sample_00001",
+      "mnist_test_index": 1,
+      "ground_truth_label": 2,
+      "float_reference_prediction": 2,
+      "member6_logged_predictions": {
+        "float": 2,
+        "fixed": 2
+      },
+      "raw_idx_input_equal": true,
+      "member6_float_input_equal": true,
+      "member6_fixed_input_matches_ties_even_times_32": true,
+      "reference_tensor_count": 13,
+      "npy_txt_max_abs_differences": {
+        "input": 4.997940117323907e-10,
+        "conv1": 4.991455027081315e-09,
+        "relu1": 4.991455027081315e-09,
+        "pool1": 4.991455027081315e-09,
+        "conv2": 4.990844626462376e-09,
+        "relu2": 4.96032726005069e-09,
+        "pool2": 4.96032726005069e-09,
+        "flatten": 4.96032726005069e-09,
+        "fc1": 3.311767571290147e-08,
+        "relu3": 4.865722935676331e-09,
+        "fc2": 4.787597696065404e-08,
+        "relu4": 4.787597696065404e-08,
+        "logits": 4.578857470960429e-08
+      },
+      "new_float_vs_member6_reference_max_abs_differences": {
+        "input": 0.0,
+        "conv1": 0.0,
+        "relu1": 0.0,
+        "pool1": 0.0,
+        "conv2": 0.0,
+        "relu2": 0.0,
+        "pool2": 0.0,
+        "flatten": 0.0,
+        "fc1": 1.0600000006633081e-06,
+        "relu3": 6.800000011963903e-07,
+        "fc2": 1.1999999998124622e-06,
+        "relu4": 6.99999999298484e-07,
+        "logits": 6.199999997846817e-07
+      }
+    },
+    {
+      "sample_id": "sample_00002",
+      "mnist_test_index": 2,
+      "ground_truth_label": 1,
+      "float_reference_prediction": 1,
+      "member6_logged_predictions": {
+        "float": 1,
+        "fixed": 1
+      },
+      "raw_idx_input_equal": true,
+      "member6_float_input_equal": true,
+      "member6_fixed_input_matches_ties_even_times_32": true,
+      "reference_tensor_count": 13,
+      "npy_txt_max_abs_differences": {
+        "input": 4.997940117323907e-10,
+        "conv1": 4.982910084549985e-09,
+        "relu1": 4.982910084549985e-09,
+        "pool1": 4.982910084549985e-09,
+        "conv2": 4.9713135830131705e-09,
+        "relu2": 4.8120116780125954e-09,
+        "pool2": 4.780883688937365e-09,
+        "flatten": 4.780883688937365e-09,
+        "fc1": 4.984130885787863e-09,
+        "relu3": 4.92614748992537e-09,
+        "fc2": 4.976196343875472e-09,
+        "relu4": 4.976196343875472e-09,
+        "logits": 4.958496280238478e-09
+      },
+      "new_float_vs_member6_reference_max_abs_differences": {
+        "input": 0.0,
+        "conv1": 0.0,
+        "relu1": 0.0,
+        "pool1": 0.0,
+        "conv2": 0.0,
+        "relu2": 0.0,
+        "pool2": 0.0,
+        "flatten": 0.0,
+        "fc1": 6.600000013179397e-07,
+        "relu3": 5.200000003924288e-07,
+        "fc2": 4.799999997473492e-07,
+        "relu4": 4.3000000005122274e-07,
+        "logits": 7.000000001866624e-07
+      }
+    },
+    {
+      "sample_id": "sample_00003",
+      "mnist_test_index": 3,
+      "ground_truth_label": 0,
+      "float_reference_prediction": 0,
+      "member6_logged_predictions": {
+        "float": 0,
+        "fixed": 0
+      },
+      "raw_idx_input_equal": true,
+      "member6_float_input_equal": true,
+      "member6_fixed_input_matches_ties_even_times_32": true,
+      "reference_tensor_count": 13,
+      "npy_txt_max_abs_differences": {
+        "input": 4.997940117323907e-10,
+        "conv1": 4.995727609369283e-09,
+        "relu1": 4.995727609369283e-09,
+        "pool1": 4.949035625756437e-09,
+        "conv2": 4.274902387635393e-08,
+        "relu2": 4.999389568993706e-09,
+        "pool2": 4.999389568993706e-09,
+        "flatten": 4.999389568993706e-09,
+        "fc1": 4.100341755020054e-08,
+        "relu3": 4.961548061288568e-09,
+        "fc2": 4.48608403758044e-08,
+        "relu4": 4.960937438625024e-09,
+        "logits": 1.0229491920199507e-08
+      },
+      "new_float_vs_member6_reference_max_abs_differences": {
+        "input": 0.0,
+        "conv1": 0.0,
+        "relu1": 0.0,
+        "pool1": 0.0,
+        "conv2": 0.0,
+        "relu2": 0.0,
+        "pool2": 0.0,
+        "flatten": 0.0,
+        "fc1": 1.0699999999363996e-06,
+        "relu3": 9.399999996162478e-07,
+        "fc2": 1.0299999999574538e-06,
+        "relu4": 1.0299999999574538e-06,
+        "logits": 1.1999999998124622e-06
+      }
+    },
+    {
+      "sample_id": "sample_00004",
+      "mnist_test_index": 4,
+      "ground_truth_label": 4,
+      "float_reference_prediction": 4,
+      "member6_logged_predictions": {
+        "float": 4,
+        "fixed": 4
+      },
+      "raw_idx_input_equal": true,
+      "member6_float_input_equal": true,
+      "member6_fixed_input_matches_ties_even_times_32": true,
+      "reference_tensor_count": 13,
+      "npy_txt_max_abs_differences": {
+        "input": 4.997940117323907e-10,
+        "conv1": 4.995727609369283e-09,
+        "relu1": 4.995727609369283e-09,
+        "pool1": 4.995727609369283e-09,
+        "conv2": 4.998168989800433e-09,
+        "relu2": 4.998168989800433e-09,
+        "pool2": 4.998168989800433e-09,
+        "flatten": 4.998168989800433e-09,
+        "fc1": 4.924316066023948e-09,
+        "relu3": 4.924316066023948e-09,
+        "fc2": 4.978027323687684e-09,
+        "relu4": 4.978027323687684e-09,
+        "logits": 8.874511792100748e-09
+      },
+      "new_float_vs_member6_reference_max_abs_differences": {
+        "input": 0.0,
+        "conv1": 0.0,
+        "relu1": 0.0,
+        "pool1": 0.0,
+        "conv2": 0.0,
+        "relu2": 0.0,
+        "pool2": 0.0,
+        "flatten": 0.0,
+        "fc1": 5.470000000729058e-07,
+        "relu3": 5.470000000729058e-07,
+        "fc2": 9.499999986672947e-07,
+        "relu4": 9.499999986672947e-07,
+        "logits": 8.000000004670937e-07
+      }
+    }
+  ]
+}

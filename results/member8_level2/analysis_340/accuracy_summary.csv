@@ -1,0 +1,7 @@
+preprocess,inference_mode,total,correct,accuracy_percent
+simple,float,340,50,14.705882352941178
+simple,fixed,340,50,14.705882352941178
+simple,optimized_hls,340,50,14.705882352941178
+full,float,340,259,76.17647058823529
+full,fixed,340,260,76.47058823529412
+full,optimized_hls,340,260,76.47058823529412

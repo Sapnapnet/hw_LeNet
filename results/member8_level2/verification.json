@@ -1,0 +1,17 @@
+{
+  "status": "passed_with_visual_observations_and_duplicate",
+  "samples": 340,
+  "unique_pixel_images": 339,
+  "new_samples": 100,
+  "pgm_files": 680,
+  "fixed_files": 680,
+  "prior240_results_unchanged": true,
+  "algorithm_unchanged": true,
+  "inference_executed": false,
+  "duplicate_groups": [
+    [
+      "m3_2_01",
+      "m3_2_02"
+    ]
+  ]
+}

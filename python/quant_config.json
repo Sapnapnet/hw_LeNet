@@ -1,0 +1,56 @@
+{
+  "version": "member3-fixed-v1",
+  "network": "LeNet5-MNIST",
+  "checkpoint_sha256": "c263e8fbdb6194f9323cdb199588be9422eb0f7f3c21ee59d4b8452ad02e16cb",
+  "bias": false,
+  "formats": {
+    "activation": {
+      "bits": 12,
+      "integer_bits": 7,
+      "fraction_bits": 5,
+      "signed": true,
+      "scale": 0.03125
+    },
+    "weight": {
+      "bits": 12,
+      "integer_bits": 1,
+      "fraction_bits": 11,
+      "signed": true,
+      "scale": 0.00048828125
+    },
+    "accumulator": {
+      "bits": 32,
+      "integer_bits": 16,
+      "fraction_bits": 16,
+      "signed": true,
+      "scale": 1.52587890625e-05
+    },
+    "output": {
+      "bits": 12,
+      "integer_bits": 7,
+      "fraction_bits": 5,
+      "signed": true,
+      "scale": 0.03125
+    }
+  },
+  "rounding": "nearest_ties_even",
+  "overflow": "saturation",
+  "hls_quantization": "AP_RND_CONV",
+  "hls_overflow": "AP_SAT",
+  "scale_convention": "real = raw_signed_integer * scale; zero_point = 0",
+  "layout": "CHW; Conv OIHW; FC OUT,IN; row-major flatten",
+  "quantization_boundaries": [
+    "input",
+    "conv1",
+    "conv2",
+    "fc1",
+    "fc2",
+    "logits"
+  ],
+  "mac": "Full-precision product and accumulator; round/saturate once after the whole dot product",
+  "requantization_right_shift": 11,
+  "max_fan_in": 256,
+  "accumulator_guard_bits": 8,
+  "argmax": "first index on ties, no softmax, no final ReLU",
+  "selection_policy": "First width >=12 with loss <=0.10 percentage points vs float; not a global optimum claim; also requires zero measured weight/activation saturation"
+}

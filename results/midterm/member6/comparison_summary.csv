@@ -1,0 +1,7 @@
+metric,float_value,fixed_value,delta_fixed_minus_float,change_percent,source_float,source_fixed
+LUT,45272,17279,-27993,-61.83292101077929,provided_by_member6/m6/results/reports/float/lenet_accelerator_with_weights_csynth.rpt,provided_by_member6/m6/results/reports/fixed/lenet_accelerator_with_weights_csynth.rpt
+FF,71471,33932,-37539,-52.52340109974675,provided_by_member6/m6/results/reports/float/lenet_accelerator_with_weights_csynth.rpt,provided_by_member6/m6/results/reports/fixed/lenet_accelerator_with_weights_csynth.rpt
+DSP48E,139,146,7,5.0359712230215825,provided_by_member6/m6/results/reports/float/lenet_accelerator_with_weights_csynth.rpt,provided_by_member6/m6/results/reports/fixed/lenet_accelerator_with_weights_csynth.rpt
+BRAM_18K,30,14,-16,-53.333333333333336,provided_by_member6/m6/results/reports/float/lenet_accelerator_with_weights_csynth.rpt,provided_by_member6/m6/results/reports/fixed/lenet_accelerator_with_weights_csynth.rpt
+latency_max_cycles,459706,474826,15120,3.2890586592300295,provided_by_member6/m6/results/reports/float/lenet_accelerator_with_weights_csynth.rpt,provided_by_member6/m6/results/reports/fixed/lenet_accelerator_with_weights_csynth.rpt
+estimated_clock_ns,9.325,8.702,-0.6229999999999993,-6.680965147453076,provided_by_member6/m6/results/reports/float/lenet_accelerator_with_weights_csynth.rpt,provided_by_member6/m6/results/reports/fixed/lenet_accelerator_with_weights_csynth.rpt
